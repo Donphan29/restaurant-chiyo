@@ -1,18 +1,23 @@
-import '@styles/globals.css'
+import '@styles/globals.css';
+
+import Nav from '@components/Nav';
 
 export const metadata = {
-  title: 'Restaurant Chiyo',
-  description: 'Fusion asiatique'
-}
+    title: 'Restaurant Chiyo',
+    description: 'Fusion asiatique',
+};
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="fr">
-      <body>{children}</body>
-    </html>
-  )
+    return (
+        <html lang='fr'>
+            <body>
+                <Nav />
+                {children}
+            </body>
+        </html>
+    );
 }

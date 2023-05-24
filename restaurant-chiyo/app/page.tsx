@@ -1,3 +1,12 @@
+import Image from 'next/image';
+
 export default function Home() {
-  return <h1>Yo </h1>
+    return (
+        <section className='w-full'>
+            <div
+                className='main'
+
+            ></div>
+        </section>
+    );
 }
