@@ -4,7 +4,7 @@ import MenuButton from './Button';
 
 export default function Nav() {
     return (
-        <nav className='w-full pt-3 pl-3 pb-3 pr-3 flex flex-row justify-between'>
+        <nav className='w-full p-4 flex flex-row justify-between'>
             <Link href='/' className='flex gap-2'>
                 <Image
                     src='/assets/icons/LEGO_logo.svg.png'
@@ -18,7 +18,14 @@ export default function Nav() {
                     <h2>Chiyo</h2>
                 </div>
             </Link>
-            <MenuButton></MenuButton>
+            <div className='flex flex-col justify-center md:hidden'>
+                <MenuButton></MenuButton>
+            </div>
+            <div className='flex flex-row justify-between gap-2 items-center sm:hidden'>
+                <h1>MENU</h1>
+                <h1>MENU</h1>
+                <h1>MENU</h1>
+            </div>
         </nav>
     )
 }
