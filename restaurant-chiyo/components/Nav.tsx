@@ -22,9 +22,9 @@ export default function Nav() {
                 <MenuButton></MenuButton>
             </div>
             <div className='flex flex-row justify-between gap-2 items-center sm:hidden'>
-                <h1>MENU</h1>
-                <h1>MENU</h1>
-                <h1>MENU</h1>
+                <Link href='#menu'><h1>MENU</h1></Link>
+                <Link href='#gallery'><h1>GALERIE</h1></Link>
+                <Link href='#info'><h1>INFO</h1></Link>
             </div>
         </nav>
     )
