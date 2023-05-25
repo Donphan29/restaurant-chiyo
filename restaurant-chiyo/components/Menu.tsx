@@ -1,15 +1,41 @@
 'use client';
+
+import 'react-multi-carousel/lib/styles.css';
+
+import Carousel from 'react-multi-carousel';
 import Link from '@mui/material/Link';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
 import CardActionArea from '@mui/material/CardActionArea';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 export default function Menu() {
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5,
+            partialVisibilityGutter: 100
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+            partialVisibilityGutter: 80
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            partialVisibilityGutter: 40
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            partialVisibilityGutter: 40
+        }
+    };
+
     return (
         <section id='menu' className='w-full h-screen'>
             <div className='w-full flex flex-row justify-between items-center pl-14 pr-14'>
@@ -19,11 +45,11 @@ export default function Menu() {
                 </Link>
             </div>
 
-            {/* CARD LIST - Menus */}
-            <div className='w-full flex flex-row flex-nowrap gap-8 pt-14 pl-14'>
+            {/* Carousel of Menus */}
+            <Carousel responsive={responsive} className='pl-2 md:pl-14 pt-14' partialVisible>
 
-                {/* CARD - Menu Midi */}
-                <Card sx={{ minWidth: 300, maxWidth: 400, maxHeight: 600 }}>
+                {/* Menu Midi */}
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
                     <CardActionArea>
                         <Link href="#" underline="always">
                             <CardMedia
@@ -46,14 +72,14 @@ export default function Menu() {
                     </CardContent>
                 </Card>
 
-                {/* CARD - Menu Sushi */}
-                <Card sx={{ minWidth: 300, maxWidth: 400, maxHeight: 600 }}>
+                {/* Sushi */}
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
                     <CardActionArea>
                         <Link href="#" underline="always">
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-sushi.JPG'
-                                title='Menu Sushi'
+                                title='Sushi'
                             />
                         </Link>
                     </CardActionArea>
@@ -69,7 +95,79 @@ export default function Menu() {
                         </Link>
                     </CardContent>
                 </Card>
-            </div>
+
+                {/* Table d'hôte */}
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
+                    <CardActionArea>
+                        <Link href="#" underline="always">
+                            <CardMedia
+                                sx={{ height: 400 }}
+                                image='/assets/images/menu-table.JPG'
+                                title="Table d'hôte"
+                            />
+                        </Link>
+                    </CardActionArea>
+                    <CardContent>
+                        <Typography gutterBottom variant='h5' component='div'>
+                            Table d'hôte
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </Typography>
+                        <Link href="#" underline="always">
+                            Voir Menu
+                        </Link>
+                    </CardContent>
+                </Card>
+
+                {/* À la carte */}
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
+                    <CardActionArea>
+                        <Link href="#" underline="always">
+                            <CardMedia
+                                sx={{ height: 400 }}
+                                image='/assets/images/menu-carte.JPG'
+                                title='À la carte'
+                            />
+                        </Link>
+                    </CardActionArea>
+                    <CardContent>
+                        <Typography gutterBottom variant='h5' component='div'>
+                            À la carte
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </Typography>
+                        <Link href="#" underline="always">
+                            Voir Menu
+                        </Link>
+                    </CardContent>
+                </Card>
+
+                {/* Déssert */}
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
+                    <CardActionArea>
+                        <Link href="#" underline="always">
+                            <CardMedia
+                                sx={{ height: 400 }}
+                                image='/assets/images/menu-dessert.JPG'
+                                title='Déssert'
+                            />
+                        </Link>
+                    </CardActionArea>
+                    <CardContent>
+                        <Typography gutterBottom variant='h5' component='div'>
+                            Déssert
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </Typography>
+                        <Link href="#" underline="always">
+                            Voir Menu
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Carousel>;
         </section>
     )
 }
