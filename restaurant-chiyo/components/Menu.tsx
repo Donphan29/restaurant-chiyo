@@ -45,7 +45,7 @@ export default function Menu() {
                 {/* Menu Midi */}
                 <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
                     <CardActionArea>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/midi' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-midi.JPG'
@@ -60,7 +60,7 @@ export default function Menu() {
                         <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/midi' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -69,7 +69,7 @@ export default function Menu() {
                 {/* Sushi */}
                 <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
                     <CardActionArea>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/sushi' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-sushi.JPG'
@@ -78,13 +78,13 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' color='#ffff'>
+                        <Typography gutterBottom variant='h5' color='/menu/sushiffff'>
                             Sushi
                         </Typography>
-                        <Typography gutterBottom variant='body2' color='#ffff'>
+                        <Typography gutterBottom variant='body2' color='/menu/sushiffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/sushi' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -93,7 +93,7 @@ export default function Menu() {
                 {/* Table d'hôte */}
                 <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
                     <CardActionArea>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/table' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-table.JPG'
@@ -108,7 +108,7 @@ export default function Menu() {
                         <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/table' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -116,15 +116,15 @@ export default function Menu() {
 
                 {/* À la carte */}
                 <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
-                    {/* <CardActionArea> */}
-                    <Link href='#' underline='always'>
-                        <CardMedia
-                            sx={{ height: 400 }}
-                            image='/assets/images/menu-carte.JPG'
-                            title='À la carte'
-                        />
-                    </Link>
-                    {/* </CardActionArea> */}
+                    <CardActionArea>
+                        <Link href='/menu/carte' underline='always'>
+                            <CardMedia
+                                sx={{ height: 400 }}
+                                image='/assets/images/menu-carte.JPG'
+                                title='À la carte'
+                            />
+                        </Link>
+                    </CardActionArea>
                     <CardContent>
                         <Typography gutterBottom variant='h5' color='#ffff'>
                             À la carte
@@ -132,7 +132,7 @@ export default function Menu() {
                         <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/carte' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -140,15 +140,15 @@ export default function Menu() {
 
                 {/* Déssert */}
                 <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
-                    {/* <CardActionArea> */}
-                    <Link href='#' underline='always'>
-                        <CardMedia
-                            sx={{ height: 400 }}
-                            image='/assets/images/menu-dessert.JPG'
-                            title='Déssert'
-                        />
-                    </Link>
-                    {/* </CardActionArea> */}
+                    <CardActionArea>
+                        <Link href='/menu/dessert' underline='always'>
+                            <CardMedia
+                                sx={{ height: 400 }}
+                                image='/assets/images/menu-dessert.JPG'
+                                title='Déssert'
+                            />
+                        </Link>
+                    </CardActionArea>
                     <CardContent>
                         <Typography gutterBottom variant='h5' color='#ffff'>
                             Déssert
@@ -156,7 +156,7 @@ export default function Menu() {
                         <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='#' underline='always'>
+                        <Link href='/menu/dessert' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
