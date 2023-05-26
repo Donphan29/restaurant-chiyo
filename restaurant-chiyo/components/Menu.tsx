@@ -13,12 +13,6 @@ import Typography from '@mui/material/Typography';
 
 export default function Menu() {
     const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5,
-            partialVisibilityGutter: 100
-        },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 3,
@@ -46,12 +40,12 @@ export default function Menu() {
             </div>
 
             {/* Carousel of Menus */}
-            <Carousel responsive={responsive} className='pl-2 md:pl-14 pt-14' partialVisible>
+            <Carousel responsive={responsive} className='pl-2 md:pl-14 pt-14 pb-14' partialVisible>
 
                 {/* Menu Midi */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
                     <CardActionArea>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-midi.JPG'
@@ -60,22 +54,22 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' component='div'>
+                        <Typography gutterBottom variant='h5' color='#ffff'>
                             Menu Midi
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
                 </Card>
 
                 {/* Sushi */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
                     <CardActionArea>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-sushi.JPG'
@@ -84,22 +78,22 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' component='div'>
+                        <Typography gutterBottom variant='h5' color='#ffff'>
                             Sushi
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
                 </Card>
 
                 {/* Table d'hôte */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
                     <CardActionArea>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
                                 image='/assets/images/menu-table.JPG'
@@ -108,61 +102,61 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' component='div'>
+                        <Typography gutterBottom variant='h5' color='#ffff'>
                             Table d'hôte
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
                 </Card>
 
                 {/* À la carte */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
-                    <CardActionArea>
-                        <Link href="#" underline="always">
-                            <CardMedia
-                                sx={{ height: 400 }}
-                                image='/assets/images/menu-carte.JPG'
-                                title='À la carte'
-                            />
-                        </Link>
-                    </CardActionArea>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                    {/* <CardActionArea> */}
+                    <Link href='#' underline='always'>
+                        <CardMedia
+                            sx={{ height: 400 }}
+                            image='/assets/images/menu-carte.JPG'
+                            title='À la carte'
+                        />
+                    </Link>
+                    {/* </CardActionArea> */}
                     <CardContent>
-                        <Typography gutterBottom variant='h5' component='div'>
+                        <Typography gutterBottom variant='h5' color='#ffff'>
                             À la carte
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>
                 </Card>
 
                 {/* Déssert */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600 }}>
-                    <CardActionArea>
-                        <Link href="#" underline="always">
-                            <CardMedia
-                                sx={{ height: 400 }}
-                                image='/assets/images/menu-dessert.JPG'
-                                title='Déssert'
-                            />
-                        </Link>
-                    </CardActionArea>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                    {/* <CardActionArea> */}
+                    <Link href='#' underline='always'>
+                        <CardMedia
+                            sx={{ height: 400 }}
+                            image='/assets/images/menu-dessert.JPG'
+                            title='Déssert'
+                        />
+                    </Link>
+                    {/* </CardActionArea> */}
                     <CardContent>
-                        <Typography gutterBottom variant='h5' component='div'>
+                        <Typography gutterBottom variant='h5' color='#ffff'>
                             Déssert
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href="#" underline="always">
+                        <Link href='#' underline='always'>
                             Voir Menu
                         </Link>
                     </CardContent>

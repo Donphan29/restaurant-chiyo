@@ -13,3 +13,11 @@ h1 {
 h2 {
     color: red;
 }
+
+.card {
+    transition: box-shadow ease 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0px 2px 12px 1px rgb(180, 180, 180);
+}
