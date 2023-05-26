@@ -14,7 +14,7 @@ export default function Hero() {
                     height={240}
                     className='object-contain'
                 />
-                <h1>Cuisine Vietnamienne - Thaïlandaise - Japonaise</h1>
+                <h1 className='font-mont_thin text-2xl pt-2 text-center'>Cuisine Vietnamienne - Thaïlandaise - Japonaise</h1>
             </div>
         </section>
     )

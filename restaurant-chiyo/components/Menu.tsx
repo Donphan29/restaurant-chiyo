@@ -33,7 +33,7 @@ export default function Menu() {
     return (
         <section id='menu' className='w-full h-screen'>
             <div className='w-full flex flex-row justify-between items-center pl-14 pr-14'>
-                <h1 className='text-7xl'>MENU</h1>
+                <h1 className='font-mont_reg text-7xl'>MENU</h1>
                 <Link href='/assets/pdf/menu-2022.pdf'>
                     <h2>menu complet <ArrowRightAltIcon></ArrowRightAltIcon></h2>
                 </Link>
@@ -54,13 +54,13 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' color='#ffff'>
+                        <Typography gutterBottom variant='h5' color='#ffff' className='font-bebas'>
                             Menu Midi
                         </Typography>
-                        <Typography gutterBottom variant='body2' color='#ffff'>
+                        <Typography gutterBottom variant='body2' color='#ffff' className='font-roboto'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='/menu/midi' underline='always'>
+                        <Link href='/menu/midi' underline='always' className='font-roboto' color='#ffff'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -78,13 +78,13 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' color='/menu/sushiffff'>
+                        <Typography gutterBottom variant='h5' color='#ffff' className='font-bebas'>
                             Sushi
                         </Typography>
-                        <Typography gutterBottom variant='body2' color='/menu/sushiffff'>
+                        <Typography gutterBottom variant='body2' color='#ffff' className='font-mont_reg'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='/menu/sushi' underline='always'>
+                        <Link href='/menu/sushi' underline='always' className='font-mont_reg' color='#ffff'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -102,13 +102,13 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' color='#ffff'>
+                        <Typography gutterBottom variant='h5' color='#ffff' className='font-mont_reg'>
                             Table d'hôte
                         </Typography>
-                        <Typography gutterBottom variant='body2' color='#ffff'>
+                        <Typography gutterBottom variant='body2' color='#ffff' className='font-mont_thin'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='/menu/table' underline='always'>
+                        <Link href='/menu/table' underline='always' className='font-mont_thin' color='#ffff'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -126,13 +126,13 @@ export default function Menu() {
                         </Link>
                     </CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant='h5' color='#ffff'>
+                        <Typography gutterBottom variant='h5' color='#ffff' className='font-source'>
                             À la carte
                         </Typography>
-                        <Typography gutterBottom variant='body2' color='#ffff'>
+                        <Typography gutterBottom variant='body2' color='#ffff' className='font-open'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='/menu/carte' underline='always'>
+                        <Link href='/menu/carte' underline='always' color='#ffff' className='font-open'>
                             Voir Menu
                         </Link>
                     </CardContent>
@@ -156,7 +156,7 @@ export default function Menu() {
                         <Typography gutterBottom variant='body2' color='#ffff'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </Typography>
-                        <Link href='/menu/dessert' underline='always'>
+                        <Link href='/menu/dessert' underline='always' color='#ffff'>
                             Voir Menu
                         </Link>
                     </CardContent>

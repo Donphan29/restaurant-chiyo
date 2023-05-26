@@ -17,6 +17,14 @@ module.exports = {
       sm: { max: '767px' },
       md: { min: '768px' }
     },
+    fontFamily: {
+      bebas: ['var(--font-bebas-neue)'],
+      roboto: ['var(--font-roboto-mono)'],
+      mont_reg: ['var(--font-montserrat-reg)'],
+      mont_thin: ['var(--font-montserrat-thin)'],
+      source: ['var(--font-source)'],
+      open: ['var(--font-open)'],
+    }
   },
   plugins: [],
 };
