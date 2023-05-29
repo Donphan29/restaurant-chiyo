@@ -3,7 +3,7 @@ export default function Carte() {
         <section className='w-full h-screen'>
             <div
                 className='w-full h-1/3 bg-cover bg-[center_65rem] flex flex-col justify-center items-center'
-                style={{ backgroundImage: 'url("/assets/images/menu-carte.JPG")' }}
+                style={{ backgroundImage: 'url("/assets/images/menu-carte.webp")' }}
             >
                 <h1>À la carte</h1>
             </div>

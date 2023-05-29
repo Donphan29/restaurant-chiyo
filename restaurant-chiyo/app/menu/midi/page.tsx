@@ -5,7 +5,7 @@ export default function Midi() {
         <section className='w-full h-screen'>
             <div
                 className='w-full h-1/6 md:h-1/3 bg-cover bg-[center_65rem] flex flex-col justify-center items-center'
-                style={{ backgroundImage: 'url("/assets/images/menu-midi.JPG")' }}
+                style={{ backgroundImage: 'url("/assets/images/menu-midi.webp")' }}
             >
                 <h1 className='font-bebas text-7xl'>Menu Midi</h1>
             </div>

@@ -48,7 +48,7 @@ export default function Menu() {
                         <Link href='/menu/midi' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
-                                image='/assets/images/menu-midi.JPG'
+                                image='/assets/images/menu-midi.webp'
                                 title='Menu Midi'
                             />
                         </Link>
@@ -72,7 +72,7 @@ export default function Menu() {
                         <Link href='/menu/sushi' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
-                                image='/assets/images/menu-sushi.JPG'
+                                image='/assets/images/menu-sushi.webp'
                                 title='Sushi'
                             />
                         </Link>
@@ -96,7 +96,7 @@ export default function Menu() {
                         <Link href='/menu/table' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
-                                image='/assets/images/menu-table.JPG'
+                                image='/assets/images/menu-table.webp'
                                 title="Table d'hôte"
                             />
                         </Link>
@@ -120,7 +120,7 @@ export default function Menu() {
                         <Link href='/menu/carte' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
-                                image='/assets/images/menu-carte.JPG'
+                                image='/assets/images/menu-carte.webp'
                                 title='À la carte'
                             />
                         </Link>
@@ -144,7 +144,7 @@ export default function Menu() {
                         <Link href='/menu/dessert' underline='always'>
                             <CardMedia
                                 sx={{ height: 400 }}
-                                image='/assets/images/menu-dessert.JPG'
+                                image='/assets/images/menu-dessert.webp'
                                 title='Déssert'
                             />
                         </Link>
