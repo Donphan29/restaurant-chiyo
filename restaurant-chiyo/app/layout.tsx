@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang='fr' className={`${bebas_neue.variable} ${roboto_mono.variable} ${montserrat_reg.variable} ${montserrat_thin.variable} ${source.variable} ${open.variable}`}>
-            <body className='main'>
+            <body className='bg-black'>
                 <Nav></Nav>
                 {children}
             </body>

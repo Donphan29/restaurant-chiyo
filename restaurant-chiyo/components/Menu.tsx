@@ -31,7 +31,7 @@ export default function Menu() {
     };
 
     return (
-        <section id='menu' className='w-full h-screen'>
+        <section id='menu' className='w-full h-5/6'>
             <div className='w-full flex flex-row justify-between items-center pl-14 pr-14'>
                 <h1 className='font-mont_reg text-7xl'>MENU</h1>
                 <Link href='/assets/pdf/menu-2022.pdf'>
