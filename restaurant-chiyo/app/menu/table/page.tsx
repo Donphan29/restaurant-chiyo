@@ -1,4 +1,4 @@
-import MenuItem from "@components/MenuItem"
+import MenuItem from "@components/general/MenuItem"
 
 export default function Table() {
     return (

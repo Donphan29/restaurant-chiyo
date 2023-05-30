@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import MenuButton from './Button';
+import MenuButton from '../general/Button';
 
 export default function Nav() {
     return (

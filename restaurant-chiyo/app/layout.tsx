@@ -1,6 +1,6 @@
 import '@styles/globals.css';
 
-import Nav from '@components/Nav';
+import Nav from '@components/sections/Nav';
 import { bebas_neue, roboto_mono, montserrat_reg, montserrat_thin, source, open } from './fonts';
 
 export const metadata = {

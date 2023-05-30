@@ -1,7 +1,7 @@
-import Hero from '@components/Hero';
-import Menu from '@components/Menu';
-import Gallery from '@components/Gallery';
-import Info from '@components/Info';
+import Hero from '@components/sections/Hero';
+import Menu from '@components/sections/Menu';
+import Gallery from '@components/sections/Gallery';
+import Info from '@components/sections/Info';
 
 export default function Home() {
     return (

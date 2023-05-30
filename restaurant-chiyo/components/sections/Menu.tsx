@@ -10,6 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea';
 import Typography from '@mui/material/Typography';
+import styles from '@styles/Card.module.css';
 
 export default function Menu() {
     const responsive = {
@@ -43,7 +44,7 @@ export default function Menu() {
             <Carousel responsive={responsive} className='pl-2 md:pl-14 pt-14 pb-14' partialVisible>
 
                 {/* Menu Midi */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className={styles.card}>
                     <CardActionArea>
                         <Link href='/menu/midi' underline='always'>
                             <CardMedia
@@ -67,7 +68,7 @@ export default function Menu() {
                 </Card>
 
                 {/* Sushi */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className={styles.card}>
                     <CardActionArea>
                         <Link href='/menu/sushi' underline='always'>
                             <CardMedia
@@ -91,7 +92,7 @@ export default function Menu() {
                 </Card>
 
                 {/* Table d'hôte */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className={styles.card}>
                     <CardActionArea>
                         <Link href='/menu/table' underline='always'>
                             <CardMedia
@@ -115,7 +116,7 @@ export default function Menu() {
                 </Card>
 
                 {/* À la carte */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className={styles.card}>
                     <CardActionArea>
                         <Link href='/menu/carte' underline='always'>
                             <CardMedia
@@ -139,7 +140,7 @@ export default function Menu() {
                 </Card>
 
                 {/* Déssert */}
-                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className='card'>
+                <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 600, bgcolor: '#0000' }} className={styles.card}>
                     <CardActionArea>
                         <Link href='/menu/dessert' underline='always'>
                             <CardMedia
