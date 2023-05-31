@@ -1,3 +1,50 @@
+export const GALLERY = [
+    {
+        src: '/assets/images/gallery/pizza.webp',
+        alt: 'pizza',
+    },
+    {
+        src: '/assets/images/gallery/sushi2.webp',
+        alt: 'sushi2',
+    },
+    {
+        src: '/assets/images/gallery/anana.webp',
+        alt: 'anana',
+    },
+    {
+        src: '/assets/images/gallery/sushi1.webp',
+        alt: 'sushi1',
+    }
+];
+
+export const MENUS = [
+    {
+        title: 'Menu Midi',
+        menu: 'midi',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+        title: 'Sushi',
+        menu: 'sushi',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+        title: "Table d'hôte",
+        menu: 'table',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+        title: 'À la carte',
+        menu: 'carte',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+        title: 'Déssert',
+        menu: 'dessert',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+];
+
 export const RESPONSIVE_CARDS = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -30,22 +77,3 @@ export const RESPONSIVE_LIGHTBOX = {
         items: 1,
     }
 };
-
-export const GALLERY = [
-    {
-        src: '/assets/images/gallery/pizza.webp',
-        alt: 'pizza',
-    },
-    {
-        src: '/assets/images/gallery/sushi2.webp',
-        alt: 'sushi2',
-    },
-    {
-        src: '/assets/images/gallery/anana.webp',
-        alt: 'anana',
-    },
-    {
-        src: '/assets/images/gallery/sushi1.webp',
-        alt: 'sushi1',
-    }
-]
