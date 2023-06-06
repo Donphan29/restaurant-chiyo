@@ -24,15 +24,20 @@ export default async function Table() {
                 <section className='text-center pt-4 pl-2 pr-2'>
                     <p>Servis avec / <i>served with</i></p>
                     <p className='pt-4'>Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</p>
-                    <p className='text-sm'><i>Choice of soup (Vegetables, Won Ton, Citro, Coco or Miso)</i></p>
+                    <p className='text-xs'><i>Choice of soup (Vegetables, Won Ton, Citro, Coco or Miso)</i></p>
                     <p className='pt-4'>Rouleau impérial (frit) ou printemps au poulet (froid)</p>
-                    <p className='text-sm'><i>Imperialroll (hot) or chicken springroll (cold)</i></p>
+                    <p className='text-xs'><i>Imperialroll (hot) or chicken springroll (cold)</i></p>
                 </section>
 
-                <section className='w-5/6 grid grid-cols-2 grid-rows-2 justify-around gap-5 pt-4'>
+                <section className='w-5/6 md:w-3/4 grid md:grid-cols-2 md:grid-rows-2 md:justify-around gap-5 md:gap-7 pt-4'>
                     {items.data?.map((item) => {
                         return (<MenuItem name={item.name} english={item.english} price={item.price} ></MenuItem>)
                     })}
+                </section>
+
+                <section className='text-center pt-4 pl-2 pr-2'>
+                    <p className='pt-4'>Thé de jasmin ou café (Déssert non-inclus)</p>
+                    <p className='text-xs'><i>Jasmin tea or coffee (Dessert not included)</i></p>
                 </section>
             </section>
         </section>
