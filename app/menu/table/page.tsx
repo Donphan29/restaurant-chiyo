@@ -1,15 +1,15 @@
-import getTableDhote from '@lib/table';
+import getCollection from '@lib/getCollection';
 import MenuItem from '@components/general/MenuItem';
 
-async function getMenuItems() {
-    const items = await getTableDhote();
+async function getTableDhote() {
+    const items = await getCollection('menus', 'table_dhote');
     if (!items) throw new Error('failed to fetch table dhote items');
 
     return items;
 }
 
 export default async function Table() {
-    const items = await getMenuItems();
+    const items = await getTableDhote();
 
     return (
         <section className='w-full h-screen'>
@@ -30,7 +30,7 @@ export default async function Table() {
                 </section>
 
                 <section className='w-5/6 grid grid-cols-2 grid-rows-2 justify-around gap-5 pt-4'>
-                    {items.table_dhote?.map((item) => {
+                    {items.data?.map((item) => {
                         return (<MenuItem name={item.name} english={item.english} price={item.price} ></MenuItem>)
                     })}
                 </section>
