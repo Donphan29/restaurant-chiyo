@@ -19,7 +19,7 @@ export const GALLERY = [
 
 export const MENUS = [
     {
-        title: 'Menu Midi',
+        title: 'Spécial Midi',
         menu: 'midi',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
