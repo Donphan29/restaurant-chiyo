@@ -1,17 +1,22 @@
 export default function MenuItem({
-    name, description, price
+    name, description, price, pieces
 }: {
     name: string;
-    description: string
+    description: string;
     price: number;
-}) {
+    pieces?: number;
+}
+) {
     return (
-        <div className='w-full font-mont_reg flex justify-between text-white border-b-2 border-white pb-2'>
-            <div className='flex flex-col'>
-                <p><b>{name}</b></p>
-                <p className='text-xs'>{description}</p>
+        <div className='w-full font-mont_reg text-white border-b-2 border-white pb-2'>
+            <div className='flex justify-between'>
+                <div className='flex flex-col'>
+                    <p><b>{name}</b></p>
+                    <p className='text-xs'>{description}</p>
+                </div>
+                <p>{price}</p>
             </div>
-            <p>{price}</p>
+            {pieces ? <p className='text-xs text-right'>{pieces} mcx</p> : <></>}
         </div>
     )
 }
