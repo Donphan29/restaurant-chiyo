@@ -46,20 +46,50 @@ export const MENUS = [
 ];
 
 export const RESPONSIVE_CARDS = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
+    xl: {
+        breakpoint: { max: 3000, min: 1801 },
+        items: 4,
+        partialVisibilityGutter: 90
+    },
+    lg: {
+        breakpoint: { max: 1800, min: 1025 },
         items: 3,
         partialVisibilityGutter: 80
     },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
+    md3: {
+        breakpoint: { max: 1024, min: 911 },
         items: 2,
-        partialVisibilityGutter: 40
+        partialVisibilityGutter: 75
     },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
+    md2: {
+        breakpoint: { max: 912, min: 820 },
+        items: 2,
+        partialVisibilityGutter: 60
+    },
+    md: {
+        breakpoint: { max: 819, min: 541 },
+        items: 2,
+        partialVisibilityGutter: 55
+    },
+    sm2: {
+        breakpoint: { max: 540, min: 512 },
+        items: 1,
+        partialVisibilityGutter: 150
+    },
+    sm: {
+        breakpoint: { max: 511, min: 411 },
+        items: 1,
+        partialVisibilityGutter: 55
+    },
+    xs: {
+        breakpoint: { max: 410, min: 390 },
         items: 1,
         partialVisibilityGutter: 40
+    },
+    xxs: {
+        breakpoint: { max: 389, min: 0 },
+        items: 1,
+        partialVisibilityGutter: 30
     }
 };
 

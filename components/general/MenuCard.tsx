@@ -16,7 +16,7 @@ export default function MenuCard({
     description: string;
 }) {
     return (
-        <Card sx={{ minWidth: 250, maxWidth: 350, maxHeight: 650, bgcolor: '#0000' }} className={styles.card}>
+        <Card sx={{ minWidth: 250, maxWidth: 325, maxHeight: 650, bgcolor: '#0000' }} className={styles.card}>
             <CardActionArea>
                 <Link href={'/menu/' + menu} underline='always'>
                     <CardMedia
