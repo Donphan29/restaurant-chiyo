@@ -7,7 +7,7 @@ export default function Nav() {
         <nav className='w-full p-4 flex flex-row justify-between'>
             <Link href='/' className='flex gap-2'>
                 <Image
-                    src='/assets/icons/LEGO_logo.svg.png'
+                    src='/assets/icons/Chiyo.png'
                     alt='chiyo logo'
                     width={35}
                     height={35}

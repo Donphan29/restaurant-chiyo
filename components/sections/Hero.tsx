@@ -8,7 +8,7 @@ export default function Hero() {
                 style={{ backgroundImage: 'url("/assets/images/home.webp")' }}
             >
                 <Image
-                    src='/assets/icons/LEGO_logo.svg.png'
+                    src='/assets/icons/Chiyo.png'
                     alt='chiyo logo'
                     width={240}
                     height={240}

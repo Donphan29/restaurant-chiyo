@@ -6,6 +6,9 @@ import { bebas_neue, roboto_mono, montserrat_reg, montserrat_thin, source, open 
 export const metadata = {
     title: 'Restaurant Chiyo',
     description: 'Fusion asiatique',
+    icons: {
+        icon: '/assets/icons/Chiyo.png'
+    }
 };
 
 export default function RootLayout({
