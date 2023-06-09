@@ -62,15 +62,15 @@ export default async function Carte() {
     return (
         <section className='w-full h-screen'>
             <div
-                className='w-full h-1/3 bg-cover bg-[center_60rem] flex flex-col justify-center items-center'
+                className='w-full h-1/6 md:h-1/3 bg-cover bg-[center_55rem] md:bg-[center_60rem] flex flex-col justify-center items-center'
                 style={{ backgroundImage: 'url("/assets/images/menu-carte.webp")' }}
             >
                 <h1 className='font-bebas text-7xl'>À la carte</h1>
             </div>
 
             <section className='w-full flex flex-col justify-center items-center text-white pt-12'>
-                <section className='w-3/4 flex justify-between'>
-                    <section className='w-2/5 flex flex-col'>
+                <section className='w-3/4 md:flex md:justify-between'>
+                    <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Entrées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {ENTREES.data?.map((item) => {
@@ -83,7 +83,7 @@ export default async function Carte() {
                         })}
                     </section>
 
-                    <section className='w-2/5 flex flex-col'>
+                    <section className='w-full sm:pt-7 md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Soupes</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {SOUP.data?.map((item) => {
@@ -97,8 +97,8 @@ export default async function Carte() {
                     </section>
                 </section>
 
-                <section className='w-3/4 flex justify-between pt-12'>
-                    <section className='w-1/3 flex flex-col'>
+                <section className='w-3/4 md:flex md:justify-between pt-7'>
+                    <section className='w-full md:w-1/3 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Plats Végétariens</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {VEGETARIAN.data?.map((item) => {
@@ -111,7 +111,7 @@ export default async function Carte() {
                         })}
                     </section>
 
-                    <section className='w-1/4 flex flex-col'>
+                    <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Pad Thai</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {PAD.data?.map((item) => {
@@ -124,7 +124,7 @@ export default async function Carte() {
                         })}
                     </section>
 
-                    <section className='w-1/3 flex flex-col'>
+                    <section className='w-full sm:pt-7 md:w-1/3 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Nouilles Croustillantes</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {NOODLE.data?.map((item) => {

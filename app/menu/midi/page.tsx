@@ -54,8 +54,8 @@ export default async function Midi() {
             <section className='w-full flex flex-col justify-center items-center text-white '>
                 <p className='text-center pt-4'>*Tous les repas incluent un biscuit, thé ou café</p>
 
-                <section className='w-3/4 md:w-3/5 flex justify-between pt-4'>
-                    <section className='w-2/5 flex flex-col'>
+                <section className='w-3/4 md:w-3/5 md:flex md:justify-between pt-4'>
+                    <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Entrées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {entrees.data?.map((item) => {
@@ -68,7 +68,7 @@ export default async function Midi() {
                         })}
                     </section>
 
-                    <section className='w-2/5 flex flex-col'>
+                    <section className='w-full sm:pt-7 md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Grillades</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
 
@@ -80,12 +80,12 @@ export default async function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-xs'><i>*Servie avec Riz ou Vermicelles, et Salade</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servie avec Riz ou Vermicelles, et Salade</i></p>
                     </section>
                 </section>
 
-                <section className='w-3/4 md:w-3/5 flex justify-between pt-4'>
-                    <section className='w-3/5 flex flex-col'>
+                <section className='w-3/4 md:w-3/5 md:flex md:justify-between pt-7'>
+                    <section className='w-full md:w-3/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Sautées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {sautees.data?.slice(0, -1).map((item) => {
@@ -100,21 +100,21 @@ export default async function Midi() {
                             return (
                                 <div className='w-full font-open'>
                                     <p>{item.name}</p>
-                                    <div className='w-full grid grid-cols-2'>
-                                        <p className='indent-24'>{item.type[0]}</p>
+                                    <div className='w-full grid grid-cols-3'>
+                                        <p className='indent-12 col-span-2'>{item.type[0]}</p>
                                         <p className='text-right'>{item.price[0]}</p>
-                                        <p className='indent-24'>{item.type[1]}</p>
+                                        <p className='indent-12 col-span-2'>{item.type[1]}</p>
                                         <p className='text-right'>{item.price[1]}</p>
-                                        <p className='indent-24'>{item.type[2]}</p>
+                                        <p className='indent-12 col-span-2'>{item.type[2]}</p>
                                         <p className='text-right'>{item.price[2]}</p>
                                     </div>
                                 </div>
                             )
                         })}
-                        <p className='text-xs'><i>*Servie avec Riz ou Vermicelles</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servie avec Riz ou Vermicelles</i></p>
                     </section>
 
-                    <section className='w-1/4 flex flex-col'>
+                    <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Soupes Repas</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {soups.data?.map((item) => {
@@ -125,14 +125,14 @@ export default async function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-xs'><i>*Servie avec Rouleau Impérial</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servie avec Rouleau Impérial</i></p>
                     </section>
                 </section>
 
-                <section className='w-3/4 md:w-3/5 flex flex-col pt-12'>
+                <section className='w-3/4 md:w-3/5 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
                     <p className='text-center text-xs'><i>*Servie avec Soupe Won Ton ou Légumes, Vermicelles et Rouleau Impérial</i></p>
-                    <section className='w-full grid md:grid-cols-2 md:grid-rows-2 gap-5 md:gap-7 pt-4'>
+                    <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
                         {combos.data?.map((item) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} ></MenuItem>)
                         })}
