@@ -35,8 +35,8 @@ export default function ScheduleItem({
     }
 
     return (
-        <div className='w-full md:w-3/4 font-mont_reg flex justify-between text-white'>
-            <p>{day}</p>
+        <div className='w-full md:w-3/4 font-mont_reg grid grid-cols-2 text-center text-white'>
+            <p>{day} :</p>
             <div className='grid grd-rows-2'>
                 {schedule}
             </div>
