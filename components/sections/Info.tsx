@@ -19,7 +19,7 @@ export default function Info() {
                 <p className='text-xl md:text-2xl'>209, Chemin Larocque, J6T 4B6</p>
                 <p className='text-xl md:text-2xl'>(450) 373-2497</p>
             </div>
-            <div className='w-full md:w-1/2 pl-14 pr-14 pt-4 justify-items-center font-open'>
+            <div className='w-full pl-14 pr-14 pt-4 justify-items-center font-open'>
                 {SCHEDULE.map((schedule) => {
                     return (
                         <ScheduleItem day={schedule.day} openingHours={schedule['opening-hours']} isClosed={schedule.isClosed}></ScheduleItem>
