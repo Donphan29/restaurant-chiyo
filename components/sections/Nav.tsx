@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import MenuButton from '../general/Button';
+import MenuDrawer from '../general/MenuDrawer';
 
 export default function Nav() {
     return (
@@ -19,7 +19,7 @@ export default function Nav() {
                 </div>
             </Link>
             <div className='flex flex-col justify-center md:hidden'>
-                <MenuButton></MenuButton>
+                <MenuDrawer></MenuDrawer>
             </div>
             <div className='flex flex-row justify-between gap-2 items-center sm:hidden'>
                 <Link href='#menu'><h1>MENU</h1></Link>
