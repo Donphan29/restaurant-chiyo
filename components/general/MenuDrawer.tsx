@@ -38,7 +38,7 @@ export default function MenuDrawer() {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <div className='flex justify-end mt-4 mr-8'><MinimizeIcon fontSize='large' color='error'></MinimizeIcon></div>
+            <div className='flex justify-end mt-12 mr-8'><MinimizeIcon fontSize='large' color='error'></MinimizeIcon></div>
             <List sx={{ mb: '15%' }}>
                 <ListItem key='home' disablePadding>
                     <ListItemButton className='justify-center'>
