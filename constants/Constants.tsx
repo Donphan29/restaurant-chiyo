@@ -54,7 +54,7 @@ export const RESPONSIVE_CARDS = {
     lg: {
         breakpoint: { max: 1800, min: 1025 },
         items: 3,
-        partialVisibilityGutter: 80
+        partialVisibilityGutter: 100
     },
     md3: {
         breakpoint: { max: 1024, min: 911 },
