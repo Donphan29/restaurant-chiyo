@@ -1,6 +1,7 @@
 import '@styles/globals.css';
 
 import Nav from '@components/sections/Nav';
+import Footer from '@components/sections/Footer';
 import { bebas_neue, roboto_mono, montserrat_reg, montserrat_thin, source, open } from './fonts';
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
             <body className='bg-black'>
                 <Nav></Nav>
                 {children}
+                <Footer></Footer>
             </body>
         </html>
     );
