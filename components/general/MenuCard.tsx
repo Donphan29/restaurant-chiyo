@@ -21,7 +21,7 @@ export default function MenuCard({
                 <Link href={'/menu/' + menu} underline='always'>
                     <CardMedia
                         sx={{ height: 450 }}
-                        image={'/assets/images/menu-' + menu + '.webp'}
+                        image={'/assets/images/menu/' + menu + '.webp'}
                         title={title}
                     />
                 </Link>
