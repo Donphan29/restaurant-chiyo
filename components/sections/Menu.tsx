@@ -18,7 +18,7 @@ export default function Menu() {
                     <h2 className='pt-4 font-source'>voir menu complet <ArrowRightAltIcon></ArrowRightAltIcon></h2>
                 </Link>
             </div>
-            <Carousel responsive={RESPONSIVE_CARDS} className='pl-4 pt-4 md:pl-14 md:pt-10 pb-14' partialVisible>
+            <Carousel responsive={RESPONSIVE_CARDS} className='pl-4 pt-4 pb-4 md:pl-14 md:pt-10 md:pb-14' partialVisible>
                 {MENUS.map((menu) => {
                     return (<MenuCard title={menu.title} menu={menu.menu} description={menu.description}></MenuCard>)
                 })}

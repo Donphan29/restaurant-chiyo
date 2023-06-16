@@ -17,6 +17,37 @@ export const GALLERY = [
     }
 ];
 
+export const GALLERY_MOBILE = [
+    {
+        src: '/assets/images/gallery/restaurant1.webp',
+        alt: 'restaurant1',
+    },
+    {
+        src: '/assets/images/gallery/peanut.webp',
+        alt: 'peanut',
+    },
+    {
+        src: '/assets/images/gallery/sushi1.webp',
+        alt: 'sushi1',
+    },
+    {
+        src: '/assets/images/gallery/tao.webp',
+        alt: 'tao',
+    },
+    {
+        src: '/assets/images/gallery/nest.webp',
+        alt: 'nest',
+    },
+    {
+        src: '/assets/images/gallery/sushi2.webp',
+        alt: 'sushi2',
+    },
+    {
+        src: '/assets/images/gallery/restaurant3.webp',
+        alt: 'restaurant1',
+    },
+];
+
 export const MENUS = [
     {
         title: 'Spécial Midi',
@@ -98,12 +129,8 @@ export const RESPONSIVE_LIGHTBOX = {
         breakpoint: { max: 3000, min: 1024 },
         items: 1,
     },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 1,
-    },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: { max: 1023, min: 0 },
         items: 1,
     }
 };

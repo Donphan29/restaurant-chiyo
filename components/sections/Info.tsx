@@ -13,7 +13,7 @@ import ScheduleItem from '@components/general/ScheduleItem';
 export default function Info() {
     // const schedule = await getScheduleDates();
     return (
-        <section id='info' className='w-full h-1/2 text-white flex flex-col items-center'>
+        <section id='info' className='w-full h-1/2 text-white flex flex-col items-center mt-14'>
             <div className='w-full pl-14 pr-14 pb-2 font-source text-center'>
                 <h1 className='text-3xl md:text-4xl'>SALABERY-DE-VALLEYFIELD</h1>
                 <p className='text-xl md:text-2xl'>209, Chemin Larocque, J6T 4B6</p>
