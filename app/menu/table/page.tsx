@@ -15,7 +15,7 @@ export default async function Table() {
         <section className='w-full h-screen'>
             <div
                 className='w-full h-1/6 md:h-1/3 bg-cover bg-[center_55rem] md:bg-[center_65rem] flex flex-col justify-center items-center'
-                style={{ backgroundImage: 'url("/assets/images/menu-table.webp")' }}
+                style={{ backgroundImage: 'url("/assets/images/menu/table.webp")' }}
             >
                 <h1 className='font-bebas text-7xl'>Table d'hôte</h1>
             </div>
