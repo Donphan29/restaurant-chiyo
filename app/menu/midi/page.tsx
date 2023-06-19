@@ -44,9 +44,9 @@ export default async function Midi() {
     const soups = await getSoups();
 
     return (
-        <section className='w-full h-screen'>
+        <section className='w-full'>
             <div
-                className='w-full h-1/6 md:h-1/3 bg-cover bg-[center_65rem] flex flex-col justify-center items-center'
+                className='w-full h-36 md:h-64 bg-cover bg-[center_65rem] flex flex-col justify-center items-center'
                 style={{ backgroundImage: 'url("/assets/images/menu/midi.webp")' }}
             >
                 <h1 className='font-bebas text-7xl'>Spécial Midi</h1>
@@ -96,7 +96,7 @@ export default async function Midi() {
                                 </div>
                             )
                         })}
-                        {sautees.data?.slice(-1).map((item) => {
+                        {/* {sautees.data?.slice(-1).map((item) => {
                             return (
                                 <div className='w-full font-open'>
                                     <p>{item.name}</p>
@@ -110,7 +110,7 @@ export default async function Midi() {
                                     </div>
                                 </div>
                             )
-                        })}
+                        })} */}
                         <p className='text-center text-xs pt-2'><i>*Servie avec Riz ou Vermicelles</i></p>
                     </section>
 

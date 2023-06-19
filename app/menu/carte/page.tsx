@@ -60,9 +60,9 @@ export default async function Carte() {
     const SAUTEES = await getSautees();
 
     return (
-        <section className='w-full h-screen'>
+        <section className='w-full'>
             <div
-                className='w-full h-1/6 md:h-1/3 bg-cover bg-[center_55rem] md:bg-[center_60rem] flex flex-col justify-center items-center'
+                className='w-full h-36 md:h-64 bg-cover bg-[center_55rem] md:bg-[center_60rem] flex flex-col justify-center items-center'
                 style={{ backgroundImage: 'url("/assets/images/menu/carte.webp")' }}
             >
                 <h1 className='font-bebas text-7xl'>À la carte</h1>
