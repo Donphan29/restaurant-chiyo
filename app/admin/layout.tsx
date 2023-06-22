@@ -6,8 +6,6 @@ export default function Layout({
     children: React.ReactNode;
 }) {
     return (
-        <body>
-            <NextAuthProvider>{children}</NextAuthProvider>
-        </body>
+        <NextAuthProvider>{children}</NextAuthProvider>
     );
 }
