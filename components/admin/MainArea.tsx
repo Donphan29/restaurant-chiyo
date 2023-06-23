@@ -7,6 +7,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import EditIcon from '@mui/icons-material/Edit';
 
 interface Database {
     db: string;
@@ -52,9 +54,49 @@ export default function MainArea({
     db: Database
 }) {
     const [value, setValue] = useState(0);
+    const [edit, setEdit] = useState(false);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
+    };
+
+    const handleEdit = () => {
+        setEdit(!edit);
+    };
+
+    const displayEdit = (edit: boolean) => {
+        if (!edit) {
+            return (
+                <Box sx={{ width: '100%' }}>
+                    {db.collections.map((collection, index) => {
+                        return (
+                            <TabPanel value={value} index={index}>
+                                <Async>
+                                    {Collection({ db: db.db, collection: collection })}
+                                </Async>
+                                <div className='w-full flex justify-end'>
+                                    <IconButton color='secondary' onClick={() => { handleEdit() }}><EditIcon></EditIcon></IconButton>
+                                </div>
+                            </TabPanel>
+                        )
+                    })}
+                </Box>
+            )
+        } else {
+            return (
+                <Box sx={{ width: '100%' }}>
+                    {db.collections.map((collection, index) => {
+                        return (
+                            <TabPanel value={value} index={index}>
+                                <div className='w-full flex justify-end'>
+                                    <IconButton color='secondary' onClick={() => { handleEdit() }}><EditIcon></EditIcon></IconButton>
+                                </div>
+                            </TabPanel>
+                        )
+                    })}
+                </Box>
+            )
+        }
     };
 
     return (
@@ -75,17 +117,7 @@ export default function MainArea({
                     })}
                 </Tabs>
             </Box>
-            <Box sx={{ width: '100%' }}>
-                {db.collections.map((collection, index) => {
-                    return (
-                        <TabPanel value={value} index={index}>
-                            <Async>
-                                {Collection({ db: db.db, collection: collection })}
-                            </Async>
-                        </TabPanel>
-                    )
-                })}
-            </Box>
+            {displayEdit(edit)}
         </section>
     )
 }
