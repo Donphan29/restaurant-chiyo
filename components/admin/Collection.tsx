@@ -14,11 +14,17 @@ export default async function Collection({
 
     return (
         <section>
-            <p>db is : {db}</p>
-            <p>collection is : {collection}</p>
-            {COLLECTION.data?.map((item: { name: string, description?: string, price: number, }) => {
+            {COLLECTION.data?.map((item: { name: string, description?: string, english?: string, price: number }, index: number) => {
                 return (
-                    <p>{item.name}</p>
+                    <section className='flex pb-4 gap-4'>
+                        <p>{index + 1}</p>
+                        <section>
+                            <p>Name: {item.name}</p>
+                            {item.description ? <p>Description: {item.description}</p> : <></>}
+                            {item.english ? <p>English: {item.english}</p> : <></>}
+                            <p>Price: {item.price}</p>
+                        </section>
+                    </section>
                 )
             })}
         </section>
