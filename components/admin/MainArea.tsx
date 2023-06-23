@@ -1,8 +1,49 @@
+/* Tab implementation inspired by Material UI documentation */
+
+import { useState } from 'react';
 import Async from '@components/general/Async';
 import Collection from '@components/admin/Collection';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
 interface Database {
     db: string;
     collections: string[]
+}
+
+interface TabPanelProps {
+    children?: React.ReactNode;
+    index: number;
+    value: number;
+}
+
+function TabPanel(props: TabPanelProps) {
+    const { children, value, index, ...other } = props;
+
+    return (
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && (
+                <Box sx={{ p: 3 }}>
+                    <Typography>{children}</Typography>
+                </Box>
+            )}
+        </div>
+    );
+}
+
+function a11yProps(index: number) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
 }
 
 export default function MainArea({
@@ -10,11 +51,41 @@ export default function MainArea({
 }: {
     db: Database
 }) {
+    const [value, setValue] = useState(0);
+
+    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+        setValue(newValue);
+    };
+
     return (
         <section className='w-2/3 outline outline-1 rounded-md font-source'>
-            <Async>
-                {Collection({ db: db.db, collection: db.collections[0] })}
-            </Async>
+            <Box sx={{ borderBottom: 1, borderColor: 'white' }}>
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    aria-label='collection tabs'
+                    textColor='inherit'
+                    indicatorColor='secondary'
+                    centered
+                >
+                    {db.collections.map((collection, index) => {
+                        return (
+                            <Tab label={collection} {...a11yProps(index)} />
+                        )
+                    })}
+                </Tabs>
+            </Box>
+            <Box sx={{ width: '100%' }}>
+                {db.collections.map((collection, index) => {
+                    return (
+                        <TabPanel value={value} index={index}>
+                            <Async>
+                                {Collection({ db: db.db, collection: collection })}
+                            </Async>
+                        </TabPanel>
+                    )
+                })}
+            </Box>
         </section>
     )
 }
