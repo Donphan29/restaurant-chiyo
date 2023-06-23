@@ -7,7 +7,7 @@ import MenuList from '@mui/material/MenuList';
 export default function Dashboard() {
     const [db, setDb] = useState(DATABASE[0]);
 
-    function handleClick(index: number) {
+    const handleClick = (index: number) => {
         setDb(DATABASE[index]);
     }
 
