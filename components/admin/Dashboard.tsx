@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import Async from '@components/general/Async';
+import MainArea from './MainArea';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import Collection from '@components/admin/Collection';
 
 export default function Dashboard() {
     const [menu, setMenu] = useState('schedule');
@@ -19,11 +18,7 @@ export default function Dashboard() {
                 <MenuItem onClick={() => { setMenu('pad-thai') }}>Sushi</MenuItem>
                 <MenuItem onClick={() => { setMenu('lmaoooo') }}>Table d'hôte</MenuItem>
             </MenuList>
-            <section className='w-2/3 outline outline-1 rounded-md font-source'>
-                <Async>
-                    {Collection({ db: 'carte', collection: menu })}
-                </Async>
-            </section>
+            <MainArea collection={menu}></MainArea>
         </section>
     )
 }
