@@ -4,7 +4,7 @@ const fetchCollection = async (db: string, collection: string) => {
     return response.json()
 }
 
-export default async function Test({
+export default async function Collection({
     db, collection
 }: {
     db: string;
