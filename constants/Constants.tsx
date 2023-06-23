@@ -4,12 +4,12 @@ export const GALLERY = [
         alt: 'pizza',
     },
     {
-        src: '/assets/images/gallery/sushi2.webp',
-        alt: 'sushi2',
+        src: '/assets/images/gallery/restaurant3.webp',
+        alt: 'restaurant3',
     },
     {
-        src: '/assets/images/gallery/anana.webp',
-        alt: 'anana',
+        src: '/assets/images/gallery/pizza.webp',
+        alt: 'pizza',
     },
     {
         src: '/assets/images/gallery/sushi1.webp',
@@ -191,5 +191,57 @@ export const SCHEDULE = [
             "evening": null
         },
         "isClosed": true
+    }
+]
+
+export const DATABASE = [
+    {
+        "db": "information",
+        "collections": [
+            "schedule"
+        ]
+    },
+    {
+        "db": "carte",
+        "collections": [
+            "entrees",
+            "grilling",
+            "noodle",
+            "pad-thai",
+            "sautees",
+            "soup",
+            "vegetarian"
+        ]
+    },
+    {
+        "db": "menus",
+        "collections": [
+            "table_dhote",
+            "dessert"
+        ]
+    },
+    {
+        "db": "midi",
+        "collections": [
+            "combo",
+            "entrees",
+            "grillades",
+            "sautees",
+            "soup",
+        ]
+    },
+    {
+        "db": "sushi",
+        "collections": [
+            "combo",
+            "extra",
+            "fried",
+            "futomaki",
+            "maki",
+            "mini-maki",
+            "sashimi",
+            "specialty",
+            "tartare"
+        ]
     }
 ]
