@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Async from '@components/general/Async';
 import Collection from '@components/admin/Collection';
+import Edit from '@components/admin/Edit';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
@@ -88,6 +89,9 @@ export default function MainArea({
                     {db.collections.map((collection, index) => {
                         return (
                             <TabPanel value={value} index={index}>
+                                {/* <Async> */}
+                                {Edit({ db: db.db, collection: collection })}
+                                {/* </Async> */}
                                 <div className='w-full flex justify-end'>
                                     <IconButton color='secondary' onClick={() => { handleEdit() }}><EditIcon></EditIcon></IconButton>
                                 </div>
@@ -117,7 +121,8 @@ export default function MainArea({
                     })}
                 </Tabs>
             </Box>
-            {displayEdit(edit)}
+            {/* {displayEdit(edit)} */}
+            <Edit db={db.db} collection={db.collections[0]}></Edit>
         </section>
     )
 }
