@@ -1,15 +1,15 @@
-import getCollection from '@lib/getCollection';
+import getCollection from '@lib/collection';
 import MenuItem from '@components/general/MenuItem';
 
 async function getTableDhote() {
-    const items = await getCollection('menus', 'table_dhote');
-    if (!items) throw new Error('failed to fetch table dhote items');
+    const items = await getCollection('menu', 'table_dhote');
+    if (!items) throw new Error('failed to fetch table_dhote items');
 
     return items;
 }
 
 export default async function Table() {
-    const items = await getTableDhote();
+    const TABLE = await getTableDhote();
 
     return (
         <section className='w-full'>
@@ -31,7 +31,7 @@ export default async function Table() {
                 </section>
 
                 <section className='w-3/4 grid md:grid-cols-2 md:grid-rows-2 gap-5 md:gap-7 pt-7'>
-                    {items.data?.map((item) => {
+                    {TABLE.data?.map((item) => {
                         return (<MenuItem name={item.name} description={item.english} price={item.price} ></MenuItem>)
                     })}
                 </section>

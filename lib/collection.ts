@@ -5,7 +5,7 @@ export default async function getCollection(database: string, collection: string
     const client = await clientPromise;
     const db = client.db(database);
 
-    const data = await db.collection(collection).find({}).toArray();
+    const data = await db.collection(collection).find({}).sort({ 'order': 1 }).toArray();
 
     return { data };
   } catch (error) {

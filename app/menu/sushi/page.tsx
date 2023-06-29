@@ -1,4 +1,4 @@
-import getCollection from '@lib/getCollection';
+import getCollection from '@lib/collection';
 import MenuItem from '@components/general/MenuItem';
 
 async function getSashimi() {
@@ -150,7 +150,7 @@ export default async function Sushi() {
 
                 <section className='w-3/4 md:flex md:justify-between sm:pt-7 md:pt-12'>
                     <section className='w-full md:w-2/5 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Makis 6 mcx</b></p>
+                        <p className='text-lg font-source'><b>Les Makis 8 mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {MAKI.data?.map((item) => {
                             return (

@@ -1,62 +1,157 @@
-[
-    {
-        "name": "Poulet, crevettes et légumes sautés servi sur nouilles croustillantes",   
-        "english": "Chicken, shrimps, vegetables stir fry served on crispy noodles",
-        "price": 28
-    },
-    {
-        "name": "Poulet à la sauce aux arachides et épinards croustillants servi avec choix de riz ou de vermicelles",   
-        "english": "Peanut butter chicken served with spinach crisps and choice of rice or vermicelli",
-        "price": 28
-    },
-    {
-        "name": "Combinaison de fruits de mer à la sauce au cari rouge servis avec choix de riz ou de vermicelles",   
-        "english": "Red curry seafood combination served with choice of rice or vermicelli",
-        "price": 35
-    },
-    {
-        "name": "Grillades de poulet et crevettes à l'asiatique servi avec salade et choix de riz ou de vermicelles",   
-        "english": "Asian style grilled chicken and shrimps served with salad and choice of rice or vermicelli",
-        "price": 28
-    },
-    {
-        "name": "Trio de grillades a l'asiatique (poulet, boeuf, crevette) servi avec salade et choix de riz ou de vermicelles",   
-        "english": "Asian style grilled chicken, beef and shrimps served with salad and choice of rice or vermicelli",
-        "price": 32
-    },
-    {
-        "name": "Sizzling de fruit de mer et légumes avec choix de riz ou de vermicelles",   
-        "english": "Sea food sizzling served with choice of rice or vermicelli",
-        "price": 36
-    },
-    {
-        "name": "Boeuf et légumes sautés servi sur nouilles croustillantes",   
-        "english": "Beef and vegetables stir fry served on crispy noodles",
-        "price": 28
-    },
-    {
-        "name": "Crevettes sautées aux légumes à la sauce au aigre douce servi avec choix de riz ou de vermicelles",   
-        "english": "Sweet and sour shrimps and vegetables served with choice of rice or vermicelli",
-        "price": 30
-    },
-    {
-        "name": "Grillades de poulet et de boeuf à l'asiatique servi avec salade et choix de riz ou de vermicelles",   
-        "english": "Asian style grilled chicken and beef served with salad and choice of rice or vermicelli",
-        "price": 28
-    },
-    {
-        "name": "Grillades de boeuf et crevettes à l'asiatique servi avec salade et choix de riz ou de vermicelles",   
-        "english": "Asian style grilled beef and shrimps served with salad and choice of rice or vermicelli",
-        "price": 29
-    },
-    {
-        "name": "Teriyaki sur un lit de légumes sautés avec choix de riz ou de vermicelles",   
-        "english": "Teriyaki on a sautéed vegetables bed served with choice of rice or vermicelli",
-        "price": 34
-    },
-    {
-        "name": "Général Tao avec choix de riz ou de vermicelles",   
-        "english": "General Tao with choice of rice or vermicelli",
-        "price": 28
-    }
-]
+{
+    "table": [
+        {
+            "name": "Poulet, crevettes et légumes sautés servi sur nouilles croustillantes",   
+            "english": "Chicken, shrimps, vegetables stir fry served on crispy noodles",
+            "price": 30,
+            "order": 1
+        },
+        {
+            "name": "Poulet à la sauce aux arachides et épinards croustillants servi avec choix de riz ou de vermicelles",   
+            "english": "Peanut butter chicken served with spinach crisps and choice of rice or vermicelli",
+            "price": 30,
+            "order": 3
+        },
+        {
+            "name": "Combinaison de fruits de mer à la sauce au cari rouge servis avec choix de riz ou de vermicelles",   
+            "english": "Red curry seafood combination served with choice of rice or vermicelli",
+            "price": 38,
+            "order": 5
+        },
+        {
+            "name": "Grillades de poulet et crevettes à l'asiatique servi avec salade et choix de riz ou de vermicelles",   
+            "english": "Asian style grilled chicken and shrimps served with salad and choice of rice or vermicelli",
+            "price": 30,
+            "order": 7
+        },
+        {
+            "name": "Trio de grillades a l'asiatique (poulet, boeuf, crevette) servi avec salade et choix de riz ou de vermicelles",   
+            "english": "Asian style grilled chicken, beef and shrimps served with salad and choice of rice or vermicelli",
+            "price": 34,
+            "order": 9
+        },
+        {
+            "name": "Sizzling de fruit de mer et légumes avec choix de riz ou de vermicelles",   
+            "english": "Sea food sizzling served with choice of rice or vermicelli",
+            "price": 39,
+            "order": 11
+        },
+        {
+            "name": "Boeuf et légumes sautés servi sur nouilles croustillantes",   
+            "english": "Beef and vegetables stir fry served on crispy noodles",
+            "price": 30,
+            "order": 2
+        },
+        {
+            "name": "Crevettes sautées aux légumes à la sauce au aigre douce servi avec choix de riz ou de vermicelles",   
+            "english": "Sweet and sour shrimps and vegetables served with choice of rice or vermicelli",
+            "price": 32,
+            "order": 4
+        },
+        {
+            "name": "Grillades de poulet et de boeuf à l'asiatique servi avec salade et choix de riz ou de vermicelles",   
+            "english": "Asian style grilled chicken and beef served with salad and choice of rice or vermicelli",
+            "price": 30,
+            "order": 6
+        },
+        {
+            "name": "Grillades de boeuf et crevettes à l'asiatique servi avec salade et choix de riz ou de vermicelles",   
+            "english": "Asian style grilled beef and shrimps served with salad and choice of rice or vermicelli",
+            "price": 31,
+            "order": 8
+        },
+        {
+            "name": "Teriyaki sur un lit de légumes sautés avec choix de riz ou de vermicelles",   
+            "english": "Teriyaki on a sautéed vegetables bed served with choice of rice or vermicelli",
+            "type": ["Poulet", "Boeuf", "Saumon", "Crevette"],
+            "price": 37,
+            "order": 10
+        },
+        {
+            "name": "Général Tao avec choix de riz ou de vermicelles",   
+            "english": "General Tao with choice of rice or vermicelli",
+            "price": 30,
+            "order": 12
+        }
+    ], "desert": [
+        {
+            "name": "Banane frite avec crème glacée",
+            "english": "Fried banana with ice cream",
+            "price": 8,
+            "order": 1
+        },
+        {
+            "name": "Anana frite avec crème glacée",
+            "english": "Fried pineapple with ice cream",
+            "price": 8,
+            "order": 2
+        },
+        {
+            "name": "Pomme frite avec crème glacée",
+            "english": "Fried apple with ice cream",
+            "price": 8,
+            "order": 3
+        },
+        {
+            "name": "Gâteau",
+            "english": "Cake",
+            "price": 6,
+            "order": 4
+        },
+        {
+            "name": "Crème glacée frite à la vanille",
+            "english": "Vanilla fried ice cream",
+            "price": 9,
+            "order": 5
+        },
+        {
+            "name": "Crème glacée à la vanille",
+            "english": "Vanilla ice cream",
+            "price": 5,
+            "order": 6
+        },
+        {
+            "name": "Crème glacée au chocolat",
+            "english": "Chocolate ice cream",
+            "price": 5,
+            "order": 7
+        }
+    ], "beverages": [
+        {
+            "name": "Boisson gazeuse",
+            "english": "Soft drink",
+            "price": 3.5,
+            "order": 1
+        },
+        {
+            "name": "Jus",
+            "english": "Juice",
+            "price": 3.5,
+            "order": 2
+        },
+        {
+            "name": "Eau pétillante",
+            "english": "Sparkling water",
+            "price": 3.5,
+            "order": 3
+        },
+        {
+            "name": "Café",
+            "english": "Coffee",
+            "price": 3,
+            "order": 4
+        },
+        {
+            "name": "Thé au jasmin",
+            "english": "Jasmin tea",
+            "price": 2.5,
+            "order": 5
+        },
+        {
+            "name": "Tisane",
+            "english": "Tea",
+            "price": 3,
+            "order": 6
+        }
+    ]
+}

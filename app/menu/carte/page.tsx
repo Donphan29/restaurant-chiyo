@@ -1,9 +1,9 @@
-import getCollection from '@lib/getCollection';
+import getCollection from '@lib/collection';
 import MenuItem from '@components/general/MenuItem';
 
-async function getEntrees() {
-    const items = await getCollection('carte', 'entrees');
-    if (!items) throw new Error('failed to fetch entrees items');
+async function getEntree() {
+    const items = await getCollection('carte', 'entree');
+    if (!items) throw new Error('failed to fetch entree items');
 
     return items;
 }
@@ -43,21 +43,21 @@ async function getGrilling() {
     return items;
 }
 
-async function getSautees() {
-    const items = await getCollection('carte', 'sautees');
-    if (!items) throw new Error('failed to fetch sautees items');
+async function getStir() {
+    const items = await getCollection('carte', 'stir-fry');
+    if (!items) throw new Error('failed to fetch stir-fry items');
 
     return items;
 }
 
 export default async function Carte() {
-    const ENTREES = await getEntrees();
+    const ENTREE = await getEntree();
     const SOUP = await getSoup();
     const VEGETARIAN = await getVegetarian();
     const PAD = await getPad();
     const NOODLE = await getNoodle();
     const GRILLING = await getGrilling();
-    const SAUTEES = await getSautees();
+    const STIR = await getStir();
 
     return (
         <section className='w-full'>
@@ -73,7 +73,7 @@ export default async function Carte() {
                     <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Entrées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {ENTREES.data?.map((item) => {
+                        {ENTREE.data?.map((item) => {
                             return (
                                 <div className='w-full flex justify-between font-open'>
                                     <p>{item.name}</p>
@@ -151,7 +151,7 @@ export default async function Carte() {
                     <p className='text-lg text-center font-source'><b>Les Sautés</b></p>
                     <p className='text-center text-xs'><i>*Servie avec choix de riz ou vermicelles</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
-                        {SAUTEES.data?.map((item) => {
+                        {STIR.data?.map((item) => {
                             return (<MenuItem name={item.name} description={item.english} price={item.price} ></MenuItem>)
                         })}
                     </section>

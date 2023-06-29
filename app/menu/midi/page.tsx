@@ -1,35 +1,35 @@
-import getCollection from '@lib/getCollection';
+import getCollection from '@lib/collection';
 import MenuItem from '@components/general/MenuItem';
 
-async function getEntrees() {
-    const items = await getCollection('midi', 'entrees');
-    if (!items) throw new Error('failed to fetch entrees items');
+async function getEntree() {
+    const items = await getCollection('midi', 'entree');
+    if (!items) throw new Error('failed to fetch entree items');
 
     return items;
 }
 
-async function getGrillades() {
-    const items = await getCollection('midi', 'grillades');
-    if (!items) throw new Error('failed to fetch grillades items');
+async function getGrilling() {
+    const items = await getCollection('midi', 'grilling');
+    if (!items) throw new Error('failed to fetch grilling items');
 
     return items;
 }
 
-async function getSautees() {
-    const items = await getCollection('midi', 'sautees');
-    if (!items) throw new Error('failed to fetch sautees items');
+async function getStir() {
+    const items = await getCollection('midi', 'stir-fry');
+    if (!items) throw new Error('failed to fetch stir-fry items');
 
     return items;
 }
 
-async function getCombos() {
+async function getCombo() {
     const items = await getCollection('midi', 'combo');
     if (!items) throw new Error('failed to fetch combo items');
 
     return items;
 }
 
-async function getSoups() {
+async function getSoup() {
     const items = await getCollection('midi', 'soup');
     if (!items) throw new Error('failed to fetch soup items');
 
@@ -37,11 +37,11 @@ async function getSoups() {
 }
 
 export default async function Midi() {
-    const entrees = await getEntrees();
-    const grillades = await getGrillades();
-    const sautees = await getSautees();
-    const combos = await getCombos();
-    const soups = await getSoups();
+    const ENTREE = await getEntree();
+    const GRILLING = await getGrilling();
+    const STIR = await getStir();
+    const COMBO = await getCombo();
+    const SOUP = await getSoup();
 
     return (
         <section className='w-full'>
@@ -58,7 +58,7 @@ export default async function Midi() {
                     <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Entrées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {entrees.data?.map((item) => {
+                        {ENTREE.data?.map((item) => {
                             return (
                                 <div className='w-full flex justify-between font-open'>
                                     <p>{item.name}</p>
@@ -72,7 +72,7 @@ export default async function Midi() {
                         <p className='text-lg font-source'><b>Les Grillades</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
 
-                        {grillades.data?.map((item) => {
+                        {GRILLING.data?.map((item) => {
                             return (
                                 <div className='w-full flex justify-between font-open'>
                                     <p>{item.name}</p>
@@ -88,7 +88,7 @@ export default async function Midi() {
                     <section className='w-full md:w-3/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Sautées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {sautees.data?.slice(0, -1).map((item) => {
+                        {STIR.data?.slice(0, -1).map((item) => {
                             return (
                                 <div className='w-full flex justify-between font-open'>
                                     <p>{item.name}</p>
@@ -117,7 +117,7 @@ export default async function Midi() {
                     <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Soupes Repas</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {soups.data?.map((item) => {
+                        {SOUP.data?.map((item) => {
                             return (
                                 <div className='w-full flex justify-between font-open'>
                                     <p>{item.name}</p>
@@ -133,7 +133,7 @@ export default async function Midi() {
                     <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
                     <p className='text-center text-xs'><i>*Servie avec Soupe Won Ton ou Légumes, Vermicelles et Rouleau Impérial</i></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {combos.data?.map((item) => {
+                        {COMBO.data?.map((item) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} ></MenuItem>)
                         })}
                     </section>
