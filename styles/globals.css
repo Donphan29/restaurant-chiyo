@@ -9,3 +9,7 @@ h1 {
 h2 {
     color: red;
 }
+
+html {
+    scroll-behavior: smooth !important;
+}
