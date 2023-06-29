@@ -11,6 +11,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import MinimizeIcon from '@mui/icons-material/Minimize';
 
 import { MENUS } from '@constants/Constants';
+import { ThemeProvider } from '@mui/material/styles';
+import { THEME } from '@constants/Theme';
 
 type Anchor = 'top';
 
@@ -38,7 +40,9 @@ export default function MenuDrawer() {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <div className='flex justify-end mt-12 mr-8'><MinimizeIcon fontSize='large' color='error'></MinimizeIcon></div>
+            <ThemeProvider theme={THEME}>
+                <div className='flex justify-end mt-12 mr-8'><MinimizeIcon fontSize='large' color='primary'></MinimizeIcon></div>
+            </ThemeProvider>
             <List sx={{ mb: '15%' }}>
                 <ListItem key='home' disablePadding>
                     <ListItemButton className='justify-center'>
