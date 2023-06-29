@@ -49,7 +49,7 @@ export default async function Midi() {
                 className='w-full h-36 md:h-64 bg-cover bg-[center_65rem] flex flex-col justify-center items-center'
                 style={{ backgroundImage: 'url("/assets/images/menu/midi.webp")' }}
             >
-                <h1 className='font-bebas text-7xl'>Spécial Midi</h1>
+                <h1 className='font-bebas text-7xl'>Menu Midi</h1>
             </div>
             <section className='w-full flex flex-col justify-center items-center text-white '>
                 <p className='text-center pt-4'>*Tous les repas incluent un biscuit, thé ou café</p>

@@ -62,7 +62,7 @@ export const MENUS = [
     {
         title: "Table d'hôte",
         menu: 'table',
-        description: "La table d'hôte inclut des repas servis avec une soupe, un rouleau et du thé ou un café.",
+        description: "La table d'hôte inclut les repas servis avec une soupe, un rouleau et un café ou du thé.",
     },
     {
         title: 'À la carte',
