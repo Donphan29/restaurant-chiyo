@@ -50,29 +50,29 @@ export const GALLERY_MOBILE = [
 
 export const MENUS = [
     {
-        title: 'Spécial Midi',
+        title: 'Menu Midi',
         menu: 'midi',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: 'Le menu midi inclut les grillades, les soupes repas, les combinaisons et autres.',
     },
     {
         title: 'Sushi',
         menu: 'sushi',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: 'Le menu sushi inclut les sashimis, les futomakis, les combinaisons et autres.',
     },
     {
         title: "Table d'hôte",
         menu: 'table',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: "La table d'hôte inclut des repas servis avec une soupe, un rouleau et du thé ou un café.",
     },
     {
         title: 'À la carte',
         menu: 'carte',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: 'Le menu à la carte inclut les plats végés, les nouilles croustillantes et autres.',
     },
     {
         title: 'Déssert',
         menu: 'dessert',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: 'Le menu déssert inclut les bananes frites, les crêmes glacées frites et autres.',
     },
 ];
 
