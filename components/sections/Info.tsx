@@ -26,9 +26,9 @@ export default function Info() {
                     <a href='tel:4503732497' className='text-lg md:text-2xl'><PhoneIcon></PhoneIcon> (450) 373-2497</a>
                 </div>
                 <div className='w-full pl-14 pr-14 pt-4 justify-items-center font-open'>
-                    {SCHEDULE.map((schedule) => {
+                    {SCHEDULE.map((schedule, index) => {
                         return (
-                            <ScheduleItem day={schedule.day} openingHours={schedule['opening-hours']} isClosed={schedule.isClosed}></ScheduleItem>
+                            <ScheduleItem day={schedule.day} openingHours={schedule['opening-hours']} isClosed={schedule.isClosed} key={'scheduleKey' + index}></ScheduleItem>
                         )
                     })}
                 </div>

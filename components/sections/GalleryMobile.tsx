@@ -15,9 +15,9 @@ export default function GalleryMobile() {
     return (
         <section id='gallery' className='w-full h-80'>
             <Carousel responsive={RESPONSIVE_LIGHTBOX} className='w-full h-full'>
-                {GALLERY_MOBILE.map((image) => {
+                {GALLERY_MOBILE.map((image, index) => {
                     return (
-                        <div className='w-full h-80 relative'>
+                        <div className='w-full h-80 relative' key={'galleyMobileKey' + index}>
                             <Image
                                 src={image.src}
                                 alt={image.alt}
