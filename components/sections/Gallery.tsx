@@ -14,69 +14,54 @@ export default function Gallery() {
 
     return (
         <section id='gallery' className='w-full h-screen'>
-            <div>
-                <Carousel responsive={RESPONSIVE_LIGHTBOX}>
-                    <SlideshowLightbox
-                        lightboxIdentifier='lightbox1'
-                        framework='next'
-                        images={GALLERY}
-                        className='grid grid-cols-3 grid-flow-col gap-4'
-                    >
-                        <Image
-                            src={GALLERY[0].src}
-                            alt={GALLERY[0].alt}
-                            width={500}
-                            height={500}
-                            data-lightboxjs="lightbox1"
-                            className='row-span-2 rounded'
-                        />
-                        <Image
-                            src={GALLERY[1].src}
-                            alt={GALLERY[1].alt}
-                            width={500}
-                            height={250}
-                            data-lightboxjs="lightbox1"
-                            className='rounded'
-                        />
-                        <Image
-                            src={GALLERY[2].src}
-                            alt={GALLERY[2].alt}
-                            width={500}
-                            height={250}
-                            data-lightboxjs="lightbox1"
-                            className='rounded'
-                        />
-                        <Image
-                            src={GALLERY[3].src}
-                            alt={GALLERY[3].alt}
-                            width={500}
-                            height={500}
-                            data-lightboxjs="lightbox1"
-                            className='row-span-2 rounded'
-                        />
-                    </SlideshowLightbox>
+            <div className='w-full flex justify-center'>
+                <Carousel responsive={RESPONSIVE_LIGHTBOX} className='w-11/12'>
                     <SlideshowLightbox
                         lightboxIdentifier='lightbox2'
                         framework='next'
                         images={GALLERY}
-                        className='grid grid-cols-3 grid-flow-col gap-4'
+                        className='grid grid-cols-3 gap-8'
                     >
+                        <div className='relative col-span-2 rounded'>
+                            <Image
+                                src={GALLERY[1].src}
+                                alt={GALLERY[1].alt}
+                                fill={true}
+                                data-lightboxjs='lightbox2'
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
                         <Image
                             src={GALLERY[0].src}
                             alt={GALLERY[0].alt}
-                            width={500}
-                            height={500}
-                            data-lightboxjs="lightbox2"
-                            className='row-span-2 rounded'
+                            width={400}
+                            height={400}
+                            data-lightboxjs='lightbox2'
                         />
+                    </SlideshowLightbox>
+                    <SlideshowLightbox
+                        lightboxIdentifier='lightbox'
+                        framework='next'
+                        images={GALLERY}
+                        className='grid grid-cols-3 gap-4'
+                    >
                         <Image
-                            src={GALLERY[1].src}
-                            alt={GALLERY[1].alt}
-                            width={500}
-                            height={250}
-                            data-lightboxjs="lightbox2"
-                            className='col-span-2 rounded'
+                            src={GALLERY[2].src}
+                            alt={GALLERY[2].alt}
+                            width={400}
+                            height={400}
+                            data-lightboxjs='lightbox'
+                            className='rounded'
                         />
+                        <div className='relative col-span-2 rounded'>
+                            <Image
+                                src={GALLERY[3].src}
+                                alt={GALLERY[3].alt}
+                                fill={true}
+                                data-lightboxjs='lightbox'
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
                     </SlideshowLightbox>
                 </Carousel>
             </div>
