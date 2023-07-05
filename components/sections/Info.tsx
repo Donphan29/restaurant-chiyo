@@ -21,7 +21,7 @@ import Link from '@mui/material/Link';
 export default function Info() {
     // const schedule = await getScheduleDates();
     return (
-        <section id='info' className='w-full h-1/2 text-white flex justify-evenly mt-14'>
+        <section id='info' className='w-full h-1/2 text-white flex justify-evenly mt-7'>
             <section className='flex flex-col items-center'>
                 <div className='w-full pl-14 pr-14 pb-2 font-source text-center'>
                     <h1 className='text-3xl md:text-4xl'>SALABERY-DE-VALLEYFIELD</h1>
