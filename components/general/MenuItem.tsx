@@ -9,7 +9,7 @@ export default function MenuItem({
 ) {
     return (
         <div className='w-full font-mont_reg text-white border-b-2 border-white pb-2'>
-            <div className='flex justify-between'>
+            <div className='flex justify-between gap-2'>
                 <div className='flex flex-col'>
                     <p><b>{name}</b></p>
                     <p className='text-xs'>{description}</p>
