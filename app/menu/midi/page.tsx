@@ -58,9 +58,9 @@ export default async function Midi() {
                     <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Entrées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {ENTREE.data?.map((item) => {
+                        {ENTREE.data?.map((item, index) => {
                             return (
-                                <div className='w-full flex justify-between font-open'>
+                                <div className='w-full flex justify-between font-open' key={'entree_key' + index}>
                                     <p>{item.name}</p>
                                     <p>{item.price}</p>
                                 </div>
@@ -71,10 +71,9 @@ export default async function Midi() {
                     <section className='w-full sm:pt-7 md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Grillades</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-
-                        {GRILLING.data?.map((item) => {
+                        {GRILLING.data?.map((item, index) => {
                             return (
-                                <div className='w-full flex justify-between font-open'>
+                                <div className='w-full flex justify-between font-open' key={'grilling_key' + index}>
                                     <p>{item.name}</p>
                                     <p>{item.price}</p>
                                 </div>
@@ -88,9 +87,9 @@ export default async function Midi() {
                     <section className='w-full md:w-3/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Sautées</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {STIR.data?.slice(0, -1).map((item) => {
+                        {STIR.data?.slice(0, -1).map((item, index) => {
                             return (
-                                <div className='w-full flex justify-between font-open'>
+                                <div className='w-full flex justify-between font-open' key={'stir_key' + index}>
                                     <p>{item.name}</p>
                                     <p>{item.price}</p>
                                 </div>
@@ -117,9 +116,9 @@ export default async function Midi() {
                     <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Soupes Repas</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {SOUP.data?.map((item) => {
+                        {SOUP.data?.map((item, index) => {
                             return (
-                                <div className='w-full flex justify-between font-open'>
+                                <div className='w-full flex justify-between font-open' key={'soup_key' + index}>
                                     <p>{item.name}</p>
                                     <p>{item.price}</p>
                                 </div>
@@ -133,8 +132,8 @@ export default async function Midi() {
                     <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
                     <p className='text-center text-xs'><i>*Servie avec Soupe Won Ton ou Légumes, Vermicelles et Rouleau Impérial</i></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {COMBO.data?.map((item) => {
-                            return (<MenuItem name={item.name} description={item.description} price={item.price} ></MenuItem>)
+                        {COMBO.data?.map((item, index) => {
+                            return (<MenuItem name={item.name} description={item.description} price={item.price} key={'combo_key' + index}></MenuItem>)
                         })}
                     </section>
                 </section>

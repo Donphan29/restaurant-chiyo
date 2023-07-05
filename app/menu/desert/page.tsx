@@ -32,8 +32,8 @@ export default async function Desert() {
                 <section className='w-3/4 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les désserts</b></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {DESERT.data?.map((item) => {
-                            return (<MenuItem name={item.name} description={item.english} price={item.price} ></MenuItem>)
+                        {DESERT.data?.map((item, index) => {
+                            return (<MenuItem name={item.name} description={item.english} price={item.price} key={'desert_key' + index}></MenuItem>)
                         })}
                     </section>
                 </section>
@@ -41,8 +41,8 @@ export default async function Desert() {
                 <section className='w-3/4 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les breuvages</b></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {BEVERAGE.data?.map((item) => {
-                            return (<MenuItem name={item.name} description={item.english} price={item.price} ></MenuItem>)
+                        {BEVERAGE.data?.map((item, index) => {
+                            return (<MenuItem name={item.name} description={item.english} price={item.price} key={'bev_key' + index}></MenuItem>)
                         })}
                     </section>
                 </section>

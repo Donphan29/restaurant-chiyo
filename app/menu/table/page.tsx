@@ -31,8 +31,8 @@ export default async function Table() {
                 </section>
 
                 <section className='w-3/4 grid md:grid-cols-2 md:grid-rows-2 gap-5 md:gap-7 pt-7'>
-                    {TABLE.data?.map((item) => {
-                        return (<MenuItem name={item.name} description={item.english} price={item.price} ></MenuItem>)
+                    {TABLE.data?.map((item, index) => {
+                        return (<MenuItem name={item.name} description={item.english} price={item.price} key={'table_key' + index}></MenuItem>)
                     })}
                 </section>
             </section>
