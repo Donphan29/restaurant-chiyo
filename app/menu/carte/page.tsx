@@ -139,7 +139,7 @@ export default async function Carte() {
                 </section>
 
                 <section className='w-3/4 flex flex-col pt-10'>
-                    <p className='text-lg text-center font-source'><b>Les Grillades à l'asiatique</b></p>
+                    <p className='text-lg text-center font-source'><b>Les Grillades à l&apos;asiatique</b></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
                         {GRILLING.data?.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.english} price={item.price} key={'grlling_key' + index}></MenuItem>)

@@ -17,7 +17,7 @@ export default async function Table() {
                 className='w-full h-36 md:h-64 bg-cover bg-[center_65rem] flex flex-col justify-center items-center'
                 style={{ backgroundImage: 'url("/assets/images/menu/table.webp")' }}
             >
-                <h1 className='font-bebas text-7xl'>Table d'hôte</h1>
+                <h1 className='font-bebas text-7xl'>Table d&apos;hôte</h1>
             </div>
             <section className='w-full flex flex-col justify-center items-center font-mont_reg text-white '>
                 <section className='w-5/6 text-center pt-4 pl-2 pr-2'>

@@ -129,7 +129,7 @@ export default async function Sushi() {
 
                 <section className='w-3/4 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Futomakis 5 mcx</b></p>
-                    <p className='text-center text-xs'><i>*Gros rouleaux avec riz à l'extérieur</i></p>
+                    <p className='text-center text-xs'><i>*Gros rouleaux avec riz à l&apos;extérieur</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
                         {FUTOMAKI.data?.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} key={'futo_key' + index}></MenuItem>)
@@ -160,7 +160,7 @@ export default async function Sushi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Moyen rouleau avec riz à l'extérieur</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Moyen rouleau avec riz à l&apos;extérieur</i></p>
                     </section>
 
                     <section className='w-full md:w-1/2 flex flex-col sm:pt-7'>
@@ -174,7 +174,7 @@ export default async function Sushi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Rouleaux nappés d'une sauce mayonnaise épicée</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Rouleaux nappés d&apos;une sauce mayonnaise épicée</i></p>
                     </section>
                 </section>
 
