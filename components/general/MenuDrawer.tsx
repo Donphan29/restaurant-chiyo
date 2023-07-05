@@ -68,7 +68,9 @@ export default function MenuDrawer() {
         <div>
             {(['top'] as const).map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)} className='font-open text-white'>MENU</Button>
+                    <ThemeProvider theme={THEME}>
+                        <Button onClick={toggleDrawer(anchor, true)} className='font-open text-white' color='primary'>MENU</Button>
+                    </ThemeProvider>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}

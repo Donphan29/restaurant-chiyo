@@ -4,7 +4,7 @@ import MenuDrawer from '../general/MenuDrawer';
 
 export default function Nav() {
     return (
-        <nav className='w-full sm:pt-12 p-4 flex flex-row justify-between'>
+        <nav className='w-full p-4 flex flex-row justify-between'>
             <Link href='/' className='flex gap-2'>
                 <Image
                     src='/assets/icons/Chiyo.png'
