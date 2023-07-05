@@ -21,7 +21,7 @@ export const MENUS = [
     },
     {
         title: 'Déssert',
-        menu: 'dessert',
+        menu: 'desert',
         description: 'Le menu déssert inclut les bananes frites, les crêmes glacées frites et autres.',
     },
 ];
@@ -141,57 +141,5 @@ export const SCHEDULE = [
             "evening": null
         },
         "isClosed": true
-    }
-]
-
-export const DATABASE = [
-    {
-        "db": "information",
-        "collections": [
-            "schedule"
-        ]
-    },
-    {
-        "db": "carte",
-        "collections": [
-            "entrees",
-            "grilling",
-            "noodle",
-            "pad-thai",
-            "sautees",
-            "soup",
-            "vegetarian"
-        ]
-    },
-    {
-        "db": "menus",
-        "collections": [
-            "table_dhote",
-            "dessert"
-        ]
-    },
-    {
-        "db": "midi",
-        "collections": [
-            "combo",
-            "entrees",
-            "grillades",
-            "sautees",
-            "soup",
-        ]
-    },
-    {
-        "db": "sushi",
-        "collections": [
-            "combo",
-            "extra",
-            "fried",
-            "futomaki",
-            "maki",
-            "mini-maki",
-            "sashimi",
-            "specialty",
-            "tartare"
-        ]
     }
 ]
