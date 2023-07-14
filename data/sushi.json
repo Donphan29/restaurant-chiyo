@@ -9,7 +9,7 @@
         },
         {
             "name": "COMBO Y",
-            "description": "1 sushi Saumon, 1 sushi Thon, 1 sushi Kanikama, 1 sushi Crevette, 4 mcx Mini Maki Sake, 4 mcx Mini Maki Kappa, 5 mcx Maki California, 5 mcx Mini Kamikaze Saké",
+            "description": "1 sushi Saumon, 1 sushi Thon, 1 sushi Kanikama, 1 sushi Crevette, 4 mcx Mini Maki Sake, 4 mcx Mini Maki Kappa, 5 mcx Maki California, 5 mcx Mini Kamikaze Sake",
             "pieces": 22,
             "price": 35,
             "order": 2
@@ -219,7 +219,7 @@
             "order": 7
         }
     ],
-    "futomaki": [
+    "futomaki-ext": [
         {
             "name": "CALIFORNIA",
             "description": "Avocat, Concombre, Caviar, Omelette, Goberge, Sésame",
@@ -279,96 +279,98 @@
             "description": "Poulet Tempura, Mayo, Salade, Concombre, Sésame",
             "price": 11.5,
             "order": 10
-        },
+        }
+    ],
+    "futomaki-int": [
         {
             "name": "NEW-BOSTON",
             "description": "Crevette, Omelette, Caviar, Concombre, Goberge, Avocat",
             "price": 11.5,
-            "order": 11
+            "order": 1
         },
         {
             "name": "VALLEYFIELD",
             "description": "Saumon, Saumon Fumée, Avocat, Fromage à la crème, Concombre",
             "price": 13,
-            "order": 12
+            "order": 2
         },
         {
             "name": "VEGGY",
             "description": "Avocat, Omelette, Salade, Radis, Carotte, Fromage à la crème, Concombre",
             "price": 11,
-            "order": 13
+            "order": 3
         },
         {
             "name": "SPICY VEGGY",
             "description": "Avocat, Omelette, Salade, Mayo, Tempura, Carotte, Concombre, Radis",
             "price": 11,
-            "order": 14
+            "order": 4
         },
         {
             "name": "KAMIKAZE SAKE",
             "description": "Saumon Épicée, Mayo, Tempura, Caviar, Concombre",
             "price": 11.5,
-            "order": 15
+            "order": 5
         },
         {
             "name": "KAMIKAZE TUNA",
             "description": "Thon Épicée, Mayo, Tempura, Caviar, Concombre",
             "price": 13,
-            "order": 16
+            "order": 6
         },
         {
             "name": "KAMIKAZE EBI",
             "description": "Crevette Épicée, Mayo, Tempura, Caviar, Concombre",
             "price": 11.5,
-            "order": 17
+            "order": 7
         },
         {
             "name": "KAMIKAZE KANI",
             "description": "Goberge Épicée, Mayo, Tempura, Caviar, Concombre",
             "price": 11.5,
-            "order": 18
+            "order": 8
         },
         {
             "name": "SAMURAI",
             "description": "Crevette Tempura, Caviar, Concombre, Goberge",
             "price": 13,
-            "order": 19
+            "order": 9
         },
         {
             "name": "B-52",
             "description": "Crevette Tempura, Avocat, Caviar, Concombre, Fromage à la crème",
             "price": 13,
-            "order": 20
+            "order": 10
         },
         {
             "name": "POULET GRILLÉ",
             "description": "Poulet Grillé, Salade, Concombre, Carotte",
             "price": 11.5,
-            "order": 21
+            "order": 11
         },
         {
             "name": "PHUKET",
             "description": "Pétoncle, Fraise, Tempura, Caviar, Salade, Concombre",
             "price": 13,
-            "order": 22
+            "order": 12
         },
         {
             "name": "SKY",
             "description": "Goberge, Caviar, Mangue, Salade, Concombre, Mayo",
             "price": 13,
-            "order": 23
+            "order": 13
         },
         {
             "name": "SUNSET",
             "description": "Homard, Mayo, Salade, Caviar, Concombre",
             "price": 15,
-            "order": 24
+            "order": 14
         },
         {
             "name": "SEXY ROLL",
             "description": "Saumon, Thon, Caviar, Goberge, Concombre, Radis, Tempura",
             "price": 14,
-            "order": 25
+            "order": 15
         }
     ],
     "fried": [
