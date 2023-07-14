@@ -1,51 +1,65 @@
 [
     {
         "day": "Lundi",
-        "opening-hours": {
+        "hours": {
             "morning": null,
             "evening": null
-        }
+        },
+        "isClosed": true,
+        "order": 1
     },
     {
         "day": "Mardi",
-        "opening-hours": {
+        "hours": {
             "morning": null,
             "evening": null
-        }
+        },
+        "isClosed": true,
+        "order": 2
     },
     {
         "day": "Mercredi",
-        "opening-hours": {
+        "hours": {
             "morning": ["11:00", "2:00"],
             "evening": ["4:30", "9:00"]
-        }
+        },
+        "isClosed": false,
+        "order": 3
     },
     {
         "day": "Jeudi",
-        "opening-hours": {
+        "hours": {
             "morning": ["11:00", "2:00"],
             "evening": ["4:30", "10:00"]
-        }
+        },
+        "isClosed": false,
+        "order": 4
     },
     {
         "day": "Vendredi",
-        "opening-hours": {
+        "hours": {
             "morning": ["11:00", "2:00"],
             "evening": ["4:30", "10:00"]
-        }
+        },
+        "isClosed": false,
+        "order": 5
     },
     {
         "day": "Samedi",
-        "opening-hours": {
+        "hours": {
             "morning": null,
             "evening": ["4:30", "10:00"]
-        }
+        },
+        "isClosed": false,
+        "order": 6
     },
     {
         "day": "Dimanche",
-        "opening-hours": {
+        "hours": {
             "morning": null,
             "evening": null
-        }
+        },
+        "isClosed": true,
+        "order": 7
     }
 ]

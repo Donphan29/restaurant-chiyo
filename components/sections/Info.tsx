@@ -1,25 +1,15 @@
 'use client';
 
-// import getSchedule from "@lib/schedule";
-
-// async function getScheduleDates() {
-//     const schedule = await getSchedule();
-//     if (!schedule) throw new Error('failed to fetch schedule dates');
-
-//     return schedule;
-// }
-
-import { SCHEDULE } from '@constants/Constants';
 import { ThemeProvider } from '@mui/material/styles';
 import { THEME } from '@constants/Theme';
 
-import ScheduleItem from '@components/general/ScheduleItem';
+import Async from '@components/general/Async';
 import PhoneIcon from '@mui/icons-material/Phone';
 import PlaceIcon from '@mui/icons-material/Place';
 import Link from '@mui/material/Link';
+import Schedule from '@components/general/Schedule';
 
 export default function Info() {
-    // const schedule = await getScheduleDates();
     return (
         <section id='info' className='w-full h-1/2 text-white flex justify-evenly mt-7'>
             <section className='flex flex-col items-center'>
@@ -31,13 +21,9 @@ export default function Info() {
                         <Link href='tel:4503732497' underline='none' color='primary' className='text-lg md:text-2xl hover:underline underline-offset-4'><PhoneIcon></PhoneIcon>(450) 373-2497</Link>
                     </ThemeProvider>
                 </div>
-                <div className='w-full pl-14 pr-14 pt-4 justify-items-center font-open'>
-                    {SCHEDULE.map((schedule, index) => {
-                        return (
-                            <ScheduleItem day={schedule.day} openingHours={schedule['opening-hours']} isClosed={schedule.isClosed} key={'scheduleKey' + index}></ScheduleItem>
-                        )
-                    })}
-                </div>
+                <Async>
+                    {Schedule()}
+                </Async>
             </section>
             <section className='sm:hidden'>
                 <img src="https://maps.googleapis.com/maps/api/staticmap?center=209+Chem.+Larocque,+Salaberry-de-Valleyfield,+QC+J6T+4B6&zoom=16&size=600x400&maptype=place&key=AIzaSyA2yKIay3D7F3daQTyVv3j3KPmz0fE16yk&map_id=a171e137b3c9f6c&signature=B5BXvm3T6NMaaWueL22ZzAy4otA=" />
