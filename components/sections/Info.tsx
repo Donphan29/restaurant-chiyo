@@ -8,6 +8,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import PlaceIcon from '@mui/icons-material/Place';
 import Link from '@mui/material/Link';
 import Schedule from '@components/general/Schedule';
+import Vacation from '@components/general/Vacation';
 
 export default function Info() {
     return (
@@ -23,6 +24,9 @@ export default function Info() {
                 </div>
                 <Async>
                     {Schedule()}
+                </Async>
+                <Async>
+                    {Vacation()}
                 </Async>
             </section>
             <section className='sm:hidden'>
