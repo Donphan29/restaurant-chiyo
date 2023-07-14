@@ -2,27 +2,27 @@ export const MENUS = [
     {
         title: 'Menu Midi',
         menu: 'midi',
-        description: 'Le menu midi inclut les grillades, les soupes repas, les combinaisons et autres.',
+        description: 'Entrées, grillades, sautés, soupes repas et combinaisons.',
     },
     {
         title: 'Sushi',
         menu: 'sushi',
-        description: 'Le menu sushi inclut les sashimis, les futomakis, les combinaisons et autres.',
+        description: 'Sashimis, mini-makis, tartares, futomakis, combinaisons, makis, frits et spécialités.',
     },
     {
         title: "Table d'hôte",
         menu: 'table',
-        description: "La table d'hôte inclut les repas servis avec une soupe, un rouleau et un café ou du thé.",
+        description: "Repas servis avec une soupe, un rouleau et un café ou du thé.",
     },
     {
         title: 'À la carte',
         menu: 'carte',
-        description: 'Le menu à la carte inclut les plats végés, les nouilles croustillantes et autres.',
+        description: 'Entrées, soupes, plats végés, pad-thai, nouilles croustillantes, grillades et sautés.',
     },
     {
         title: 'Déssert',
         menu: 'desert',
-        description: 'Le menu déssert inclut les bananes frites, les crêmes glacées frites et autres.',
+        description: 'Bananes frites, crêmes glacées frites, breuvages et autres.',
     },
 ];
 
