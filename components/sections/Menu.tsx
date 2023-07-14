@@ -18,7 +18,7 @@ export default function Menu() {
                 <h1 className='font-mont_reg text-7xl'>MENU</h1>
                 <ThemeProvider theme={THEME}>
                     <Link href='/assets/pdf/menu-2022.pdf' color='secondary' underline='none' className='hover:underline underline-offset-4'>
-                        <h2 className='pt-4 font-source'>voir menu complet <ArrowRightAltIcon></ArrowRightAltIcon></h2>
+                        <h2 className='pt-4 font-open'>voir menu complet <ArrowRightAltIcon></ArrowRightAltIcon></h2>
                     </Link>
                 </ThemeProvider>
             </div>

@@ -13,7 +13,7 @@ export default function Nav() {
                     height={35}
                     className='object-contain'
                 />
-                <div className='flex flex-col justify-center md:flex-row md:gap-x-2 md:items-center'>
+                <div className='flex flex-col justify-center font-mont_reg md:flex-row md:gap-x-2 md:items-center'>
                     <h1>Restaurant</h1>
                     <h2>Chiyo</h2>
                 </div>
@@ -21,7 +21,7 @@ export default function Nav() {
             <div className='flex flex-col justify-center md:hidden'>
                 <MenuDrawer></MenuDrawer>
             </div>
-            <div className='flex flex-row justify-between gap-2 items-center sm:hidden'>
+            <div className='flex flex-row justify-between font-open gap-2 items-center sm:hidden'>
                 <Link href='#menu'><h1>MENU</h1></Link>
                 <Link href='#gallery'><h1>GALERIE</h1></Link>
                 <Link href='#info'><h1>INFO</h1></Link>

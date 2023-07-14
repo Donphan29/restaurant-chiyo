@@ -19,7 +19,7 @@ export default async function Table() {
             >
                 <h1 className='font-bebas text-7xl'>Table d&apos;hôte</h1>
             </div>
-            <section className='w-full flex flex-col justify-center items-center font-mont_reg text-white '>
+            <section className='w-full flex flex-col justify-center items-center font-source text-white '>
                 <section className='w-5/6 text-center pt-4 pl-2 pr-2'>
                     <p>Servies avec / <i>served with</i></p>
                     <p className='pt-4'>Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</p>

@@ -13,7 +13,7 @@ export default async function Vacation() {
                     <div key={'vacation_key' + index}></div>
                 )
                 return (
-                    <section className='text-center' key={'vacation_key' + index}>
+                    <section className='text-center font-open' key={'vacation_key' + index}>
                         <p>*Attention nous serons fermés du {item.start} au {item.end}</p>
                         <p>À bientôt!</p>
                     </section>
