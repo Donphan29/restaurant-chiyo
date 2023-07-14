@@ -79,7 +79,7 @@ export default async function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Servie avec Riz ou Vermicelles, et Salade</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servis avec Riz ou Vermicelles, et Salade</i></p>
                     </section>
                 </section>
 
@@ -109,7 +109,7 @@ export default async function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Servie avec Riz ou Vermicelles</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servis avec Riz ou Vermicelles</i></p>
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
@@ -123,13 +123,13 @@ export default async function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Servie avec Rouleau Impérial</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servies avec Rouleau Impérial</i></p>
                     </section>
                 </section>
 
                 <section className='w-3/4 md:w-3/5 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
-                    <p className='text-center text-xs'><i>*Servie avec Soupe Won Ton ou Légumes, Vermicelles et Rouleau Impérial</i></p>
+                    <p className='text-center text-xs'><i>*Servies avec Soupe Won Ton ou Légumes, Vermicelles et Rouleau Impérial</i></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
                         {COMBO.data?.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} key={'combo_key' + index}></MenuItem>)

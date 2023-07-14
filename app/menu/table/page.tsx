@@ -21,7 +21,7 @@ export default async function Table() {
             </div>
             <section className='w-full flex flex-col justify-center items-center font-mont_reg text-white '>
                 <section className='w-5/6 text-center pt-4 pl-2 pr-2'>
-                    <p>Servis avec / <i>served with</i></p>
+                    <p>Servies avec / <i>served with</i></p>
                     <p className='pt-4'>Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</p>
                     <p className='text-xs'><i>Choice of soup (Vegetables, Won Ton, Citro, Coco or Miso)</i></p>
                     <p className='pt-6'>Rouleau impérial (frit) ou printemps au poulet (froid)</p>

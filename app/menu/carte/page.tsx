@@ -149,7 +149,7 @@ export default async function Carte() {
 
                 <section className='w-3/4 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Sautés</b></p>
-                    <p className='text-center text-xs'><i>*Servie avec choix de riz ou vermicelles</i></p>
+                    <p className='text-center text-xs'><i>*Servis avec choix de riz ou vermicelles</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
                         {STIR.data?.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.english} price={item.price} key={'stir_key' + index}></MenuItem>)
