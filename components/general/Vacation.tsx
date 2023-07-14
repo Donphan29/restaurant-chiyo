@@ -1,5 +1,5 @@
 const fetchCollection = async (db: string, collection: string) => {
-    const response = await fetch(`http://localhost:3000/api/collection?db=${db}&collection=${collection}`)
+    const response = await fetch(`https://restaurant-chiyo-donphan29.vercel.app//api/collection?db=${db}&collection=${collection}`)
     if (!response.ok) throw new Error(`Error code: ${response.status}`)
     return response.json()
 }
