@@ -22,9 +22,16 @@ async function getTartare() {
     return items;
 }
 
-async function getFutomaki() {
-    const items = await getCollection('sushi', 'futomaki');
-    if (!items) throw new Error('failed to fetch futomaki items');
+async function getFutomakiExt() {
+    const items = await getCollection('sushi', 'futomaki-ext');
+    if (!items) throw new Error('failed to fetch futomaki-ext items');
+
+    return items;
+}
+
+async function getFutomakiInt() {
+    const items = await getCollection('sushi', 'futomaki-int');
+    if (!items) throw new Error('failed to fetch futomaki-int items');
 
     return items;
 }
@@ -68,7 +75,8 @@ export default async function Sushi() {
     const SASHIMI = await getSashimi();
     const MINI_MAKI = await getMiniMaki();
     const TARTARE = await getTartare();
-    const FUTOMAKI = await getFutomaki();
+    const FUTOMAKI_EXT = await getFutomakiExt();
+    const FUTOMAKI_INT = await getFutomakiInt();
     const COMBO = await getCombo();
     const MAKI = await getMaki();
     const FRIED = await getFried();
@@ -100,7 +108,7 @@ export default async function Sushi() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/3 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Minis Makis</b></p>
+                        <p className='text-lg font-source'><b>Les Minis Makis 8 mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {MINI_MAKI.data?.map((item, index) => {
                             return (
@@ -131,7 +139,17 @@ export default async function Sushi() {
                     <p className='text-lg text-center font-source'><b>Les Futomakis 5 mcx</b></p>
                     <p className='text-center text-xs'><i>*Gros rouleaux avec riz à l&apos;extérieur</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
-                        {FUTOMAKI.data?.map((item, index) => {
+                        {FUTOMAKI_EXT.data?.map((item, index) => {
+                            return (<MenuItem name={item.name} description={item.description} price={item.price} key={'futo_key' + index}></MenuItem>)
+                        })}
+                    </section>
+                </section>
+
+                <section className='w-3/4 flex flex-col pt-10'>
+                    <p className='text-lg text-center font-source'><b>Les Futomakis 5 mcx</b></p>
+                    <p className='text-center text-xs'><i>*Gros rouleaux avec riz à l&apos;intérieur</i></p>
+                    <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
+                        {FUTOMAKI_INT.data?.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} key={'futo_key' + index}></MenuItem>)
                         })}
                     </section>
