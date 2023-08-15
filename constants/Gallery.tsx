@@ -55,7 +55,7 @@ export const GALLERY = [
         alt: 'sushi2',
     },
     {
-        src: '/assets/images/gallery/desert.JPG',
+        src: '/assets/images/gallery/desert.webp',
         alt: 'desert',
     },
     {
