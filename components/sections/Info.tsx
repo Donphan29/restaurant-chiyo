@@ -3,12 +3,10 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { THEME } from '@constants/Theme';
 
-import Async from '@components/general/Async';
 import PhoneIcon from '@mui/icons-material/Phone';
 import PlaceIcon from '@mui/icons-material/Place';
 import Link from '@mui/material/Link';
 import Schedule from '@components/general/Schedule';
-import Vacation from '@components/general/Vacation';
 
 export default function Info() {
     return (
@@ -22,12 +20,7 @@ export default function Info() {
                         <Link href='tel:4503732497' underline='none' color='primary' className='text-lg md:text-2xl hover:underline underline-offset-4'><PhoneIcon></PhoneIcon>(450) 373-2497</Link>
                     </ThemeProvider>
                 </div>
-                <Async>
-                    {Schedule()}
-                </Async>
-                <Async>
-                    {Vacation()}
-                </Async>
+                <Schedule></Schedule>
             </section>
             <section className='sm:hidden'>
                 <img src="https://maps.googleapis.com/maps/api/staticmap?center=209+Chem.+Larocque,+Salaberry-de-Valleyfield,+QC+J6T+4B6&zoom=16&size=600x400&maptype=place&key=AIzaSyA2yKIay3D7F3daQTyVv3j3KPmz0fE16yk&map_id=a171e137b3c9f6c&signature=B5BXvm3T6NMaaWueL22ZzAy4otA=" />

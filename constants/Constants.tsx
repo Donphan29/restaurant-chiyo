@@ -84,3 +84,62 @@ export const RESPONSIVE_LIGHTBOX = {
         items: 1,
     }
 };
+
+export const SCHEDULE = [
+    {
+        "day": "Lundi",
+        "hours": {
+            "morning": null,
+            "evening": null
+        },
+        "isClosed": true,
+    },
+    {
+        "day": "Mardi",
+        "hours": {
+            "morning": null,
+            "evening": null
+        },
+        "isClosed": true,
+    },
+    {
+        "day": "Mercredi",
+        "hours": {
+            "morning": ["11:00", "2:00"],
+            "evening": ["4:30", "9:00"]
+        },
+        "isClosed": false,
+    },
+    {
+        "day": "Jeudi",
+        "hours": {
+            "morning": ["11:00", "2:00"],
+            "evening": ["4:30", "10:00"]
+        },
+        "isClosed": false,
+    },
+    {
+        "day": "Vendredi",
+        "hours": {
+            "morning": ["11:00", "2:00"],
+            "evening": ["4:30", "10:00"]
+        },
+        "isClosed": false,
+    },
+    {
+        "day": "Samedi",
+        "hours": {
+            "morning": null,
+            "evening": ["4:30", "10:00"]
+        },
+        "isClosed": false,
+    },
+    {
+        "day": "Dimanche",
+        "hours": {
+            "morning": null,
+            "evening": null
+        },
+        "isClosed": true,
+    }
+];
