@@ -22,9 +22,6 @@ export default function Info() {
                 </div>
                 <Schedule></Schedule>
             </section>
-            <section className='sm:hidden'>
-                <img src="https://maps.googleapis.com/maps/api/staticmap?center=209+Chem.+Larocque,+Salaberry-de-Valleyfield,+QC+J6T+4B6&zoom=16&size=600x400&maptype=place&key=AIzaSyA2yKIay3D7F3daQTyVv3j3KPmz0fE16yk&map_id=a171e137b3c9f6c&signature=B5BXvm3T6NMaaWueL22ZzAy4otA=" />
-            </section>
         </section>
     )
 }
