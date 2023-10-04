@@ -3,6 +3,7 @@ import '@styles/globals.css';
 import Nav from '@components/sections/Nav';
 import Footer from '@components/sections/Footer';
 import { bebas_neue, montserrat_reg, montserrat_thin, source, open } from './fonts';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
     title: 'Restaurant Chiyo',
@@ -23,6 +24,7 @@ export default function RootLayout({
                 <Nav></Nav>
                 {children}
                 <Footer></Footer>
+                <Analytics />
             </body>
         </html>
     );
