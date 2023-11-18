@@ -33,7 +33,7 @@ export default function MenuCard({
                 <Typography gutterBottom variant='body2' color='#ffff' className='font-open'>
                     {description}
                 </Typography>
-                <Link href='/menu/midi' underline='always' color='#ffff' className='font-open'>
+                <Link href={'/menu/' + menu} underline='always' color='#ffff' className='font-open'>
                     Voir Menu
                 </Link>
             </CardContent>
