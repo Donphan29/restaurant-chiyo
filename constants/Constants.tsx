@@ -114,7 +114,7 @@ export const SCHEDULE = [
         "day": "Jeudi",
         "hours": {
             "morning": ["11:00", "2:00"],
-            "evening": ["4:30", "10:00"]
+            "evening": ["4:30", "9:00"]
         },
         "isClosed": false,
     },
