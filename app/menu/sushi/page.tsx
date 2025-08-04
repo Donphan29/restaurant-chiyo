@@ -40,7 +40,7 @@ export default function Sushi() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/3 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Minis Makis 8 mcx</b></p>
+                        <p className='text-lg font-source'><b>Mini Maki 8 mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {MINI_MAKI.map((item, index) => {
                             return (
@@ -53,7 +53,7 @@ export default function Sushi() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/5 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Tartares</b></p>
+                        <p className='text-lg font-source'><b>Tartares</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {TARTARE.map((item, index) => {
                             return (
@@ -87,17 +87,6 @@ export default function Sushi() {
                     </section>
                 </section>
 
-                <section className='w-3/4 flex flex-col pt-10'>
-                    <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
-                    <p className='text-center text-xs'><i>*Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</i></p>
-                    <p className='text-center text-xs'><i>*Thé de jasmin ou café</i></p>
-                    <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {COMBO.map((item, index) => {
-                            return (<MenuItem name={item.name} description={item.description} price={item.price} pieces={item.pieces} key={'combo_key' + index}></MenuItem>)
-                        })}
-                    </section>
-                </section>
-
                 <section className='w-3/4 md:flex md:justify-between sm:pt-7 md:pt-12'>
                     <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Makis 8 mcx</b></p>
@@ -125,6 +114,17 @@ export default function Sushi() {
                             )
                         })}
                         <p className='text-center text-xs pt-2'><i>*Rouleaux nappés d&apos;une sauce mayonnaise épicée</i></p>
+                    </section>
+                </section>
+
+                <section className='w-3/4 flex flex-col pt-10'>
+                    <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
+                    <p className='text-center text-xs'><i>*Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</i></p>
+                    <p className='text-center text-xs'><i>*Thé de jasmin ou café</i></p>
+                    <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
+                        {COMBO.map((item, index) => {
+                            return (<MenuItem name={item.name} description={item.description} price={item.price} pieces={item.pieces} key={'combo_key' + index}></MenuItem>)
+                        })}
                     </section>
                 </section>
 
