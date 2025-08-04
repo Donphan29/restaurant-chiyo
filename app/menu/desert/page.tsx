@@ -1,7 +1,9 @@
+'use client'
+
 import DESSERT_MENU from '../../../data/table.json';
 import MenuItem from '@components/general/MenuItem';
 
-export default async function Desert() {
+export default function Desert() {
     const DESERT = DESSERT_MENU.dessert;
     const BEVERAGE = DESSERT_MENU.beverages;
 

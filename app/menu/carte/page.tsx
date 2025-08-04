@@ -1,7 +1,9 @@
+'use client'
+
 import CARTE_MENU from '../../../data/carte.json';
 import MenuItem from '@components/general/MenuItem';
 
-export default async function Carte() {
+export default function Carte() {
     const ENTREE = CARTE_MENU.entrees;
     const SOUP = CARTE_MENU.soup;
     const VEGETARIAN = CARTE_MENU.vegetarian;

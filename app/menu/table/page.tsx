@@ -1,7 +1,9 @@
+'use client'
+
 import TABLE_MENU from '../../../data/table.json';
 import MenuItem from '@components/general/MenuItem';
 
-export default async function Table() {
+export default function Table() {
     const TABLE = TABLE_MENU.table;
 
     return (

@@ -1,7 +1,9 @@
+'use client'
+
 import MIDI_MENU from '../../../data/midi.json';
 import MenuItem from '@components/general/MenuItem';
 
-export default async function Midi() {
+export default function Midi() {
     const ENTREE = MIDI_MENU.entrees;
     const GRILLING = MIDI_MENU.grilling;
     const STIR = MIDI_MENU['stir-fry'];

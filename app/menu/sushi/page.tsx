@@ -1,7 +1,9 @@
+'use client'
+
 import SUSHI_MENU from '../../../data/sushi.json';
 import MenuItem from '@components/general/MenuItem';
 
-export default async function Sushi() {
+export default function Sushi() {
     const SASHIMI = SUSHI_MENU.sashimi;
     const MINI_MAKI = SUSHI_MENU['mini-maki'];
     const TARTARE = SUSHI_MENU.tartare;
