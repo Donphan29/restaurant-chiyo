@@ -1,240 +1,194 @@
 {
     "entrees": [
         {
-            "name": "Rouleau Impérial (frit)",
-            "price": 3.75,
-            "order": 1
+            "name": "Rouleau Impérial (Frit)",
+            "price": 3.75
         },
         {
-            "name": "Rouleau de Printemps (froid) au poulet",
-            "price": 4.75,
-            "order": 2
+            "name": "Rouleau Printemps au Poulet (Froid)",
+            "price": 4.75
         },
         {
-            "name": "Rouleau de Printemps (froid) au poulet et crevette",
-            "price": 6.25,
-            "order": 3
+            "name": "Rouleau Printemps au Poulet & Crevette",
+            "price": 6.25
         },
         {
             "name": "Crevettes Tempura",
-            "price": 16,
-            "order": 4
+            "price": 16
         },
         {
             "name": "Won Ton Frit",
-            "price": 9,
-            "order": 5
+            "price": 9
         }
     ],
     "soup": [
         {
-            "name": "Soupe aux légumes",
-            "price": 4.25,
-            "order": 1
+            "name": "Soupe aux Légumes",
+            "price": 4.25
         },
         {
             "name": "Soupe Won Ton",
-            "price": 4.25,
-            "order": 2
+            "price": 4.25
         },
         {
-            "name": "Soupe aux légumes et à la citronelle",
-            "price": 4.25,
-            "order": 3
+            "name": "Soupe aux Légumes & à la Citronelle",
+            "price": 4.25
         },
         {
-            "name": "Soupe aux légumes et à la citronelle et lait de coco",
-            "price": 4.25,
-            "order": 4
+            "name": "Soupe aux Légumes & à la Citronelle & Lait de Coco",
+            "price": 4.25
         },
         {
             "name": "Soupe Miso",
-            "price": 4.25,
-            "order": 5
+            "price": 4.25
         },
         {
-            "name": "Soupe aux légumes et à la citronelle et au poulet",
-            "price": 7,
-            "order": 6
+            "name": "Soupe aux Légumes & à la Citronelle & Poulet",
+            "price": 7
         },
         {
-            "name": "Soupe aux légumes et à la citronelle et aux crevettes",
-            "price": 7,
-            "order": 7
+            "name": "Soupe aux Légumes & à la citronelle & Crevettes",
+            "price": 7
         }
     ],
     "vegetarian": [
         {
-            "name": "Légumes sautés sur nouilles croustillantes",
-            "price": 18,
-            "order": 1
+            "name": "Légumes sautés servi sur nouilles croustillantes",
+            "price": 18
         },
         {
-            "name": "Légumes sautés au cari rouge servi avec choix de riz ou vermicelles",
-            "price": 18,
-            "order": 2
+            "name": "Légumes sautés à la sauce au cari rouge",
+            "price": 18
         }
     ],
     "pad-thai": [
         {
             "name": "Poulet - Chicken",
-            "price": 23,
-            "order": 1
+            "price": 23
         },
         {
             "name": "Boeuf - Beef",
-            "price": 24,
-            "order": 2
+            "price": 24
         },
         {
-            "name": "Crevettes - Shrimp",
-            "price": 25,
-            "order": 3
+            "name": "Crevette - Shrimp",
+            "price": 25
         }
     ],
     "noodle": [
         {
             "name": "Poulet - Chicken",
-            "price": 23,
-            "order": 1
+            "price": 23
         },
         {
             "name": "Boeuf - Beef",
-            "price": 24,
-            "order":2
+            "price": 24
         },
         {
-            "name": "Crevettes - Shrimp",
-            "price": 25,
-            "order": 3
+            "name": "Crevette - Shrimp",
+            "price": 25
         },
         {
-            "name": "Fruits de Mer - Seafood",
-            "price": 33,
-            "order": 4
+            "name": "Fruit de Mer - Seafood",
+            "price": 33
         },
         {
-            "name": "Poulet et Crevettes - Chicken and Shrimp",
-            "price": 25,
-            "order": 5
+            "name": "Poulet & Crevette - Chicken & Shrimp",
+            "price": 25
         }
     ],
     "grilling": [
         {
-            "name": "Grillades de poulet et de boeuf à l'asiatique, servi avec salade et choix de riz ou de vermicelles",
-            "english": "Asian style grilled chicken and beef served with salad and choice of rice or vermicelli",
-            "price": 23,
-            "order": 1
+            "name": "Grillades de poulet & boeuf à l'asiatique",
+            "english": "Asian style grilled chicken & beef",
+            "price": 23
         },
         {
-            "name": "Grillades de poulet et de crevettes à l'asiatique, servi avec salade et choix de riz ou de vermicelles",
-            "english": "Asian style grilled chicken and shrimps served with salad and choice of rice or vermicelli",
-            "price": 23,
-            "order": 2
+            "name": "Grillades de poulet & crevette à l'asiatique",
+            "english": "Asian style grilled chicken & shrimp",
+            "price": 23
         },
         {
-            "name": "Grillades de boeuf et de crevettes à l'asiatique, servi avec salade et choix de riz ou de vermicelles",
-            "english": "Asian style grilled beef and shrimps served with salad and choice of rice or vermicelli",
-            "price": 25,
-            "order": 3
+            "name": "Grillades de boeuf & crevette à l'asiatique",
+            "english": "Asian style grilled beef & shrimp",
+            "price": 25
         },
         {
-            "name": "Trio de grillades à l'asiatique (poulet, boeuf, crevettes), servi avec salade et choix de riz ou de vermicelles",
-            "english": "Asian style grilled chicken, beef and shrimps served with salad and choice of rice or vermicelli",
-            "price": 27,
-            "order": 4
+            "name": "Trio de grillades à l'asiatique (poulet, boeuf, crevette)",
+            "english": "Asian style grilled chicken, beef & shrimp",
+            "price": 27
         }
     ],
     "stir-fry": [
         {
-            "name": "Poulet aux légumes sauce aux huîtres",
-            "english": "Oyster sauce chicken and vegetables",
-            "price": 23,
-            "order": 1
+            "name": "Poulet sauté aux légumes à la sauce aux huîtres",
+            "english": "Oyster sauce chicken & vegetables",
+            "price": 23
         },
         {
-            "name": "Poulet aux légumes sauce cari rouge",
-            "english": "Red curry chicken and vegetables",
-            "price": 23,
-            "order": 2
+            "name": "Poulet sauté aux légumes à la sauce cari rouge",
+            "english": "Red curry chicken & vegetables",
+            "price": 23
         },
         {
-            "name": "Poulet aux légumes sauce aigre-douce",
-            "english": "Sweet & sour chicken and vegetables",
-            "price": 23,
-            "order": 3
+            "name": "Poulet sauté aux légumes à la sauce aigre douce",
+            "english": "Sweet & sour chicken & vegetables",
+            "price": 23
         },
         {
-            "name": "Poulet sauce aux arachides et épinards croustillants",
+            "name": "Poulet à la sauce aux arachides & épinards croustillants",
             "english": "Peanut butter chicken served with spinach crisps",
-            "price": 23,
-            "order": 4
+            "price": 23
         },
         {
-            "name": "Général Tao",
-            "english": "General Tao",
-            "price": 23,
-            "order": 5
+            "name": "Poulet Général Tao",
+            "english": "Chicken General Tao",
+            "price": 23
         },
         {
-            "name": "Boeuf aux légumes sauce cari rouge",
-            "english": "Red curry beef and vegetables",
-            "price": 24,
-            "order": 6
+            "name": "Boeuf sauté aux légumes à la sauce cari rouge",
+            "english": "Red curry beef & vegetables",
+            "price": 24
         },
         {
-            "name": "Crevettes aux légumes sauce aux huîtres",
-            "english": "Oyster sauce shrimp and vegetables",
-            "price": 25,
-            "order": 7
+            "name": "Crevettes sautés aux légumes à la sauce aux huîtres",
+            "english": "Oyster sauce shrimp & vegetables",
+            "price": 25
         },
         {
-            "name": "Crevettes aux légumes sauce cari rouge",
-            "english": "Red curry shrimp and vegetables",
-            "price": 25,
-            "order": 8
+            "name": "Crevettes sautés aux légumes à la sauce cari rouge",
+            "english": "Red curry shrimp & vegetables",
+            "price": 25
         },
         {
-            "name": "Crevettes aux légumes sauce aigre-douce",
-            "english": "Sweet & sour shrimp and vegetables",
-            "price": 25,
-            "order": 9
+            "name": "Crevettes sautés aux légumes à la sauce aigre-douce",
+            "english": "Sweet & sour shrimp & vegetables",
+            "price": 25
         },
         {
-            "name": "Crevettes sauce aux arachides et épinards croustillants",
+            "name": "Crevettes à la sauce aux arachides & épinards croustillants",
             "english": "Peanut butter shrimp served with spinach crisps",
-            "price": 25,
-            "order": 10
+            "price": 25
         },
         {
-            "name": "Fruits de mer aux légumes sauce cari rouge",
-            "english": "Red curry seafood with vegetables",
-            "price": 33,
-            "order": 11
+            "name": "Fruits de mer sautés aux légumes à la sauce aux huîtres",
+            "english": "Oyster sauce seafood & vegetables",
+            "price": 33
         },
         {
-            "name": "Fruits de mer aux légumes sauce aigre-douce",
-            "english": "Sweet & sour seafood with vegetables",
-            "price": 33,
-            "order": 12
+            "name": "Fruits de mer sautés aux légumes à la sauce cari rouge",
+            "english": "Red curry seafood & vegetables",
+            "price": 33
         },
         {
-            "name": "Fruits de mer sauce aux arachides et épinards croustillants",
+            "name": "Fruits de mer sautés aux légumes à la sauce aigre douce",
+            "english": "Sweet & sour seafood & vegetables",
+            "price": 33
+        },
+        {
+            "name": "Fruits de mer à la sauce aux arachides & épinards croustillants",
             "english": "Peanut butter seafood served with spinach crisps",
-            "price": 33,
-            "order": 13
-        },
-        {
-            "name": "Fruits de mer aux légumes sauce aux huîtres",
-            "english": "Oyster sauce seafood and vegetables",
-            "price": 33,
-            "order": 14
-        },
-        {
-            "name": "Poulet et Crevettes aux poivrons",
-            "english": "Chicken, shrimp and bell peppers sauteed",
-            "price": 24,
-            "order": 15
+            "price": 33
         }
     ]
 }

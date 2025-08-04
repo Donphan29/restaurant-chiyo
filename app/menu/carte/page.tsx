@@ -24,7 +24,7 @@ export default function Carte() {
             <section className='w-full flex flex-col justify-center items-center text-white pt-12'>
                 <section className='w-3/4 md:flex md:justify-between'>
                     <section className='w-full md:w-2/5 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Entrées</b></p>
+                        <p className='text-lg font-source'><b>Entrées / Appetizers</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {ENTREE.map((item, index) => {
                             return (
@@ -37,7 +37,7 @@ export default function Carte() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-2/5 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Soupes</b></p>
+                        <p className='text-lg font-source'><b>Petites Soupes / Small Soups</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {SOUP.map((item, index) => {
                             return (
@@ -52,7 +52,7 @@ export default function Carte() {
 
                 <section className='w-3/4 md:flex md:justify-between pt-7'>
                     <section className='w-full md:w-1/3 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Plats Végétariens</b></p>
+                        <p className='text-lg font-source'><b>Plats Végétariens / Vegetarian Dishes</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {VEGETARIAN.map((item, index) => {
                             return (
@@ -65,7 +65,7 @@ export default function Carte() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Pad Thai</b></p>
+                        <p className='text-lg font-source'><b>Pad Thai</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {PAD.map((item, index) => {
                             return (
@@ -78,7 +78,7 @@ export default function Carte() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/3 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Nouilles Croustillantes</b></p>
+                        <p className='text-lg font-source'><b>Nouilles Croustillantes / Crispy Noodles</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
                         {NOODLE.map((item, index) => {
                             return (
@@ -92,7 +92,7 @@ export default function Carte() {
                 </section>
 
                 <section className='w-3/4 flex flex-col pt-10'>
-                    <p className='text-lg text-center font-source'><b>Les Grillades à l&apos;asiatique</b></p>
+                    <p className='text-lg text-center font-source'><b>Grillades à l&apos;asiatique / Asian style grillings</b></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
                         {GRILLING.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.english} price={item.price} key={'grlling_key' + index}></MenuItem>)
@@ -101,7 +101,7 @@ export default function Carte() {
                 </section>
 
                 <section className='w-3/4 flex flex-col pt-10'>
-                    <p className='text-lg text-center font-source'><b>Les Sautés</b></p>
+                    <p className='text-lg text-center font-source'><b>Nos Sautés / Our stir fires</b></p>
                     <p className='text-center text-xs'><i>*Servis avec choix de riz ou vermicelles</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
                         {STIR.map((item, index) => {
