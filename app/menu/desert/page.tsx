@@ -1,6 +1,6 @@
 'use client'
 
-import DESSERT_MENU from '../../../data/table.json';
+import DESSERT_MENU from '../../../data/dessert.json';
 import MenuItem from '@components/general/MenuItem';
 
 export default function Desert() {
