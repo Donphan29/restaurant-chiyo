@@ -21,6 +21,8 @@ export default function Table() {
                     <p className='text-xs'><i>Choice of soup (Vegetables, Won Ton, Citro, Coco or Miso)</i></p>
                     <p className='pt-6'>Rouleau impérial (Frit) ou Printemps Poulet (Froid)</p>
                     <p className='text-xs'><i>Imperial Roll (Hot) or Chicken Spring Roll (Cold)</i></p>
+                    <p className='pt-6'>Choix de riz ou vermicelles (sauf #1 & #2)</p>
+                    <p className='text-xs'><i>Choice of rice or vermicelli (except #1 & #2)</i></p>
                     <p className='pt-6'>Thé ou Café (Déssert non-inclus)</p>
                     <p className='text-xs'><i>Tea or Coffee (Dessert not included)</i></p>
                 </section>
