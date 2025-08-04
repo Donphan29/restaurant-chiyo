@@ -1,4 +1,4 @@
-import { Bebas_Neue, Montserrat, Source_Sans_Pro, Open_Sans } from 'next/font/google';
+import { Bebas_Neue, Montserrat, Source_Sans_3, Open_Sans } from 'next/font/google';
 
 export const bebas_neue = Bebas_Neue({
     weight: '400',
@@ -21,7 +21,7 @@ export const montserrat_thin = Montserrat({
     variable: '--font-montserrat-thin',
 })
 
-export const source = Source_Sans_Pro({
+export const source = Source_Sans_3({
     weight: '400',
     subsets: ['latin'],
     display: 'swap',
