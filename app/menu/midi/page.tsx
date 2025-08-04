@@ -19,7 +19,7 @@ export default function Midi() {
                 <h1 className='font-bebas text-7xl'>Menu Midi</h1>
             </div>
             <section className='w-full flex flex-col justify-center items-center text-white '>
-                <p className='text-center pt-4'>*Tous les repas sauf les entrées incluent un biscuit, thé ou café</p>
+                <p className='text-center pt-4'>*Tous les repas sauf les entrées incluent biscuit & thé ou café</p>
 
                 <section className='w-3/4 md:w-3/5 md:flex md:justify-between pt-4'>
                     <section className='w-full md:w-2/5 flex flex-col'>
@@ -46,7 +46,7 @@ export default function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Servis avec Riz ou Vermicelles, et Salade</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servis avec Rouleau Impérial, Riz ou Vermicelles & Salade</i></p>
                     </section>
                 </section>
 
@@ -76,7 +76,7 @@ export default function Midi() {
                                 </div>
                             )
                         })}
-                        <p className='text-center text-xs pt-2'><i>*Servis avec Riz ou Vermicelles</i></p>
+                        <p className='text-center text-xs pt-2'><i>*Servis avec Rouleau Impérial & Riz ou Vermicelles</i></p>
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/4 flex flex-col'>
@@ -96,7 +96,7 @@ export default function Midi() {
 
                 <section className='w-3/4 md:w-3/5 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
-                    <p className='text-center text-xs'><i>*Servies avec Soupe Won Ton ou Légumes, Vermicelles et Rouleau Impérial</i></p>
+                    <p className='text-center text-xs'><i>*Servies avec Soupe Won Ton ou Légumes Vermicelles, Rouleau Impérial & Riz ou Vermicelles</i></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
                         {COMBO.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} key={'combo_key' + index}></MenuItem>)
