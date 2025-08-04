@@ -19,10 +19,10 @@ export default function Table() {
                     <p>Servies avec / <i>served with</i></p>
                     <p className='pt-4'>Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</p>
                     <p className='text-xs'><i>Choice of soup (Vegetables, Won Ton, Citro, Coco or Miso)</i></p>
-                    <p className='pt-6'>Rouleau impérial (frit) ou printemps au poulet (froid)</p>
-                    <p className='text-xs'><i>Imperialroll (hot) or chicken springroll (cold)</i></p>
-                    <p className='pt-6'>Thé de jasmin ou café (Déssert non-inclus)</p>
-                    <p className='text-xs'><i>Jasmin tea or coffee (Dessert not included)</i></p>
+                    <p className='pt-6'>Rouleau impérial (Frit) ou Printemps Poulet (Froid)</p>
+                    <p className='text-xs'><i>Imperial Roll (Hot) or Chicken Spring Roll (Cold)</i></p>
+                    <p className='pt-6'>Thé ou Café (Déssert non-inclus)</p>
+                    <p className='text-xs'><i>Tea or Coffee (Dessert not included)</i></p>
                 </section>
 
                 <section className='w-3/4 grid md:grid-cols-2 md:grid-rows-2 gap-5 md:gap-7 pt-7'>
