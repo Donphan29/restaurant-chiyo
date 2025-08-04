@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 
 export default function Hero() {
@@ -15,6 +17,7 @@ export default function Hero() {
                     className='object-contain'
                 />
                 <h1 className='font-mont_thin text-2xl pt-2 text-center'>Fusion Asiatique</h1>
+                <h1 className='font-mont_thin text-l text-center'>Apportez votre vin</h1>
             </div>
         </section>
     )

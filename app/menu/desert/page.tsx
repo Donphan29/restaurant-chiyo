@@ -1,23 +1,11 @@
-import getCollection from '@lib/collection';
+'use client'
+
+import DESSERT_MENU from '../../../data/dessert.json';
 import MenuItem from '@components/general/MenuItem';
 
-async function getDesert() {
-    const items = await getCollection('menu', 'desert');
-    if (!items) throw new Error('failed to fetch desert items');
-
-    return items;
-}
-
-async function getBeverage() {
-    const items = await getCollection('menu', 'beverages');
-    if (!items) throw new Error('failed to fetch beverages items');
-
-    return items;
-}
-
-export default async function Desert() {
-    const DESERT = await getDesert();
-    const BEVERAGE = await getBeverage();
+export default function Desert() {
+    const DESERT = DESSERT_MENU.dessert;
+    const BEVERAGE = DESSERT_MENU.beverages;
 
     return (
         <section className='w-full'>
@@ -32,7 +20,7 @@ export default async function Desert() {
                 <section className='w-3/4 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Désserts</b></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {DESERT.data?.map((item, index) => {
+                        {DESERT.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.english} price={item.price} key={'desert_key' + index}></MenuItem>)
                         })}
                     </section>
@@ -41,7 +29,7 @@ export default async function Desert() {
                 <section className='w-3/4 flex flex-col pt-10'>
                     <p className='text-lg text-center font-source'><b>Les Breuvages</b></p>
                     <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {BEVERAGE.data?.map((item, index) => {
+                        {BEVERAGE.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.english} price={item.price} key={'bev_key' + index}></MenuItem>)
                         })}
                     </section>

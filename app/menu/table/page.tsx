@@ -1,15 +1,10 @@
-import getCollection from '@lib/collection';
+'use client'
+
+import TABLE_MENU from '../../../data/table.json';
 import MenuItem from '@components/general/MenuItem';
 
-async function getTableDhote() {
-    const items = await getCollection('menu', 'table_dhote');
-    if (!items) throw new Error('failed to fetch table_dhote items');
-
-    return items;
-}
-
-export default async function Table() {
-    const TABLE = await getTableDhote();
+export default function Table() {
+    const TABLE = TABLE_MENU.table;
 
     return (
         <section className='w-full'>
@@ -24,14 +19,16 @@ export default async function Table() {
                     <p>Servies avec / <i>served with</i></p>
                     <p className='pt-4'>Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</p>
                     <p className='text-xs'><i>Choice of soup (Vegetables, Won Ton, Citro, Coco or Miso)</i></p>
-                    <p className='pt-6'>Rouleau impérial (frit) ou printemps au poulet (froid)</p>
-                    <p className='text-xs'><i>Imperialroll (hot) or chicken springroll (cold)</i></p>
-                    <p className='pt-6'>Thé de jasmin ou café (Déssert non-inclus)</p>
-                    <p className='text-xs'><i>Jasmin tea or coffee (Dessert not included)</i></p>
+                    <p className='pt-6'>Rouleau impérial (Frit) ou Printemps Poulet (Froid)</p>
+                    <p className='text-xs'><i>Imperial Roll (Hot) or Chicken Spring Roll (Cold)</i></p>
+                    <p className='pt-6'>Choix de riz ou vermicelles (sauf #1 & #2)</p>
+                    <p className='text-xs'><i>Choice of rice or vermicelli (except #1 & #2)</i></p>
+                    <p className='pt-6'>Thé ou Café (Déssert non-inclus)</p>
+                    <p className='text-xs'><i>Tea or Coffee (Dessert not included)</i></p>
                 </section>
 
                 <section className='w-3/4 grid md:grid-cols-2 md:grid-rows-2 gap-5 md:gap-7 pt-7'>
-                    {TABLE.data?.map((item, index) => {
+                    {TABLE.map((item, index) => {
                         return (<MenuItem name={item.name} description={item.english} price={item.price} key={'table_key' + index}></MenuItem>)
                     })}
                 </section>

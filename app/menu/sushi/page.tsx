@@ -1,87 +1,19 @@
-import getCollection from '@lib/collection';
+'use client'
+
+import SUSHI_MENU from '../../../data/sushi.json';
 import MenuItem from '@components/general/MenuItem';
 
-async function getSashimi() {
-    const items = await getCollection('sushi', 'sashimi');
-    if (!items) throw new Error('failed to fetch sashimi items');
-
-    return items;
-}
-
-async function getMiniMaki() {
-    const items = await getCollection('sushi', 'mini-maki');
-    if (!items) throw new Error('failed to fetch mini maki items');
-
-    return items;
-}
-
-async function getTartare() {
-    const items = await getCollection('sushi', 'tartare');
-    if (!items) throw new Error('failed to fetch tartare items');
-
-    return items;
-}
-
-async function getFutomakiExt() {
-    const items = await getCollection('sushi', 'futomaki-ext');
-    if (!items) throw new Error('failed to fetch futomaki-ext items');
-
-    return items;
-}
-
-async function getFutomakiInt() {
-    const items = await getCollection('sushi', 'futomaki-int');
-    if (!items) throw new Error('failed to fetch futomaki-int items');
-
-    return items;
-}
-
-async function getCombo() {
-    const items = await getCollection('sushi', 'combo');
-    if (!items) throw new Error('failed to fetch combo items');
-
-    return items;
-}
-
-async function getMaki() {
-    const items = await getCollection('sushi', 'maki');
-    if (!items) throw new Error('failed to fetch maki items');
-
-    return items;
-}
-
-async function getFried() {
-    const items = await getCollection('sushi', 'fried');
-    if (!items) throw new Error('failed to fetch fried items');
-
-    return items;
-}
-
-async function getSpecialty() {
-    const items = await getCollection('sushi', 'specialty');
-    if (!items) throw new Error('failed to fetch specialty items');
-
-    return items;
-}
-
-async function getExtra() {
-    const items = await getCollection('sushi', 'extra');
-    if (!items) throw new Error('failed to fetch extra items');
-
-    return items;
-}
-
-export default async function Sushi() {
-    const SASHIMI = await getSashimi();
-    const MINI_MAKI = await getMiniMaki();
-    const TARTARE = await getTartare();
-    const FUTOMAKI_EXT = await getFutomakiExt();
-    const FUTOMAKI_INT = await getFutomakiInt();
-    const COMBO = await getCombo();
-    const MAKI = await getMaki();
-    const FRIED = await getFried();
-    const SPECIALTY = await getSpecialty();
-    const EXTRA = await getExtra();
+export default function Sushi() {
+    const SASHIMI = SUSHI_MENU.sashimi;
+    const MINI_MAKI = SUSHI_MENU['mini-maki'];
+    const TARTARE = SUSHI_MENU.tartare;
+    const FUTOMAKI_EXT = SUSHI_MENU['futomaki-ext'];
+    const FUTOMAKI_INT = SUSHI_MENU['futomaki-int'];
+    const COMBO = SUSHI_MENU.combo;
+    const MAKI = SUSHI_MENU.maki;
+    const FRIED = SUSHI_MENU.fried;
+    const SPECIALTY = SUSHI_MENU.specialty;
+    const EXTRA = SUSHI_MENU.extra;
 
     return (
         <section className='w-full'>
@@ -97,7 +29,7 @@ export default async function Sushi() {
                     <section className='w-full md:w-1/3 flex flex-col'>
                         <p className='text-lg font-source'><b>Sushi 2mcx/Sashimi 3mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {SASHIMI.data?.map((item, index) => {
+                        {SASHIMI.map((item, index) => {
                             return (
                                 <div className='w-full flex justify-between font-open' key={'sashimi_key' + index}>
                                     <p>{item.name}/<i className='text-xs'>{item.description}</i></p>
@@ -108,9 +40,9 @@ export default async function Sushi() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/3 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Minis Makis 8 mcx</b></p>
+                        <p className='text-lg font-source'><b>Mini Maki 8 mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {MINI_MAKI.data?.map((item, index) => {
+                        {MINI_MAKI.map((item, index) => {
                             return (
                                 <div className='w-full flex justify-between font-open' key={'mini_key' + index}>
                                     <p>{item.name}/<i className='text-xs'>{item.description}</i></p>
@@ -121,9 +53,9 @@ export default async function Sushi() {
                     </section>
 
                     <section className='w-full sm:pt-7 md:w-1/5 flex flex-col'>
-                        <p className='text-lg font-source'><b>Les Tartares</b></p>
+                        <p className='text-lg font-source'><b>Tartares</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {TARTARE.data?.map((item, index) => {
+                        {TARTARE.map((item, index) => {
                             return (
                                 <div className='w-full flex justify-between font-open' key={'tartare_key' + index}>
                                     <p>{item.name}</p>
@@ -139,7 +71,7 @@ export default async function Sushi() {
                     <p className='text-lg text-center font-source'><b>Les Futomakis 5 mcx</b></p>
                     <p className='text-center text-xs'><i>*Gros rouleaux avec riz à l&apos;extérieur</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
-                        {FUTOMAKI_EXT.data?.map((item, index) => {
+                        {FUTOMAKI_EXT.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} key={'futo_key' + index}></MenuItem>)
                         })}
                     </section>
@@ -149,19 +81,8 @@ export default async function Sushi() {
                     <p className='text-lg text-center font-source'><b>Les Futomakis 5 mcx</b></p>
                     <p className='text-center text-xs'><i>*Gros rouleaux avec riz à l&apos;intérieur</i></p>
                     <section className='w-full grid md:grid-cols-3 gap-5 md:gap-7 pt-4'>
-                        {FUTOMAKI_INT.data?.map((item, index) => {
+                        {FUTOMAKI_INT.map((item, index) => {
                             return (<MenuItem name={item.name} description={item.description} price={item.price} key={'futo_key' + index}></MenuItem>)
-                        })}
-                    </section>
-                </section>
-
-                <section className='w-3/4 flex flex-col pt-10'>
-                    <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
-                    <p className='text-center text-xs'><i>*Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</i></p>
-                    <p className='text-center text-xs'><i>*Thé de jasmin ou café</i></p>
-                    <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                        {COMBO.data?.map((item, index) => {
-                            return (<MenuItem name={item.name} description={item.description} price={item.price} pieces={item.pieces} key={'combo_key' + index}></MenuItem>)
                         })}
                     </section>
                 </section>
@@ -170,7 +91,7 @@ export default async function Sushi() {
                     <section className='w-full md:w-2/5 flex flex-col'>
                         <p className='text-lg font-source'><b>Les Makis 8 mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {MAKI.data?.map((item, index) => {
+                        {MAKI.map((item, index) => {
                             return (
                                 <div className='w-full flex justify-between font-open' key={'maki_key' + index}>
                                     <p>{item.name}/<i className='text-xs'>{item.description}</i></p>
@@ -184,7 +105,7 @@ export default async function Sushi() {
                     <section className='w-full md:w-1/2 flex flex-col sm:pt-7'>
                         <p className='text-lg font-source'><b>Les Frits 7 mcx</b></p>
                         <hr className='border border-white w-full mx-auto mb-1' />
-                        {FRIED.data?.map((item, index) => {
+                        {FRIED.map((item, index) => {
                             return (
                                 <div className='w-full flex justify-between font-open' key={'fried_key' + index}>
                                     <p>{item.name}/<i className='text-xs'>{item.description}</i></p>
@@ -196,18 +117,29 @@ export default async function Sushi() {
                     </section>
                 </section>
 
+                <section className='w-3/4 flex flex-col pt-10'>
+                    <p className='text-lg text-center font-source'><b>Les Combinaisons</b></p>
+                    <p className='text-center text-xs'><i>*Soupe au choix (Légumes, Won Ton, Citro, Coco ou Miso)</i></p>
+                    <p className='text-center text-xs'><i>*Thé de jasmin ou café</i></p>
+                    <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
+                        {COMBO.map((item, index) => {
+                            return (<MenuItem name={item.name} description={item.description} price={item.price} pieces={item.pieces} key={'combo_key' + index}></MenuItem>)
+                        })}
+                    </section>
+                </section>
+
                 <section className='w-3/4 md:flex md:justify-between pt-10'>
                     <section className='w-full md:w-3/4 flex flex-col'>
                         <p className='text-lg text-center font-source'><b>Les Spécialités du Chef</b></p>
                         <section className='w-full grid md:grid-cols-2 gap-5 md:gap-7 pt-4'>
-                            {SPECIALTY.data?.map((item, index) => {
+                            {SPECIALTY.map((item, index) => {
                                 return (<MenuItem name={item.name} description={item.description} price={item.price} pieces={item.pieces} key={'special_key' + index}></MenuItem>)
                             })}
                         </section>
                     </section>
 
                     <section className='w-full md:w-1/5 flex flex-col md:mt-auto sm:pt-7'>
-                        {EXTRA.data?.map((item, index) => {
+                        {EXTRA.map((item, index) => {
                             return (
                                 <div className='w-full flex justify-between font-open' key={'extra_key' + index}>
                                     <p><i>{item.name}</i></p>
