@@ -1,145 +1,134 @@
-[
-    {
-        "entrees": [
-            {
-                "name": "Rouleau Impérial (frit)",
-                "price": 3.75,
-                "order": 3
-            },
-            {
-                "name": "Rouleau Printemps Poulet (froit)",
-                "price": 4.75,
-                "order": 4
-            },
-            {
-                "name": "Rouleau Printemps Crevette",
-                "price": 6.25,
-                "order": 5
-            },
-            {
-                "name": "Soupe Légumes Vermicelles",
-                "price": 4.25,
-                "order": 1
-            },
-            {
-                "name": "Soupe Won Ton",
-                "price": 4.25,
-                "order": 2
-            }
-        ]
-    },
-    {
-        "grilling": [
-            {
-                "name": "Rouleau Impérial & Crevette Grillé",
-                "price": 21,
-                "order": 3
-            },
-            {
-                "name": "Saumon Tériyaki",
-                "price": 25,
-                "order": 4
-            },
-            {
-                "name": "Rouleau Impérial & Poulet Grillé",
-                "price": 16,
-                "order": 1
-            },
-            {
-                "name": "Rouleau Impérial & Boeuf Grillé",
-                "price": 19,
-                "order": 2
-            }
-        ]
-    },
-    {
-        "stir-fry": [
-            {
-                "name": "Rouleau Impérial & Poulet sauce aux Arachides",
-                "price": 21,
-                "order": 5
-            },
-            {
-                "name": "Rouleau Impérial & Poulet sauté aux Gingembres",
-                "price": 21,
-                "order": 6
-            },
-            {
-                "name": "Rouleau Impérial & Poulet sauté à la Citronnelle",
-                "price": 21,
-                "order": 7
-            },
-            {
-                "name": "Rouleau Impérial & Crevettes & Légumes sauce Aigre-Douce",
-                "price": 24,
-                "order": 8
-            },
-            {
-                "name": "Rouleau Impérial & Légumes sur Nouilles Croustillantes",
-                "type": ["Poulet", "Boeuf", "Poulet & Crevettes"],
-                "price": [21, 21, 24],
-                "order": 9
-            }            
-        ]
-    },
-    {
-
-        "combo": [
-            {
-                "name": "Combinaison B",
-                "description": "Brochette de Crevettes & Boeuf Grillé & Riz ou vermicelles et salade",
-                "price": 26,
-                "order": 2
-            },
-            {
-                "name": "Combinaison C",
-                "description": "Brochette de Crevettes & Boeuf Grillé & Poulet Grillé & Riz ou vermicelles et salade",
-                "price": 28,
-                "order": 3
-            },
-            {
-                "name": "Combinaison D",
-                "description": "Poulet & Crevettes sautées aux Poivrons & Riz ou Vermicelles",
-                "price": 25,
-                "order": 4
-            },
-            {
-                "name": "Combinaison E",
-                "description": "revettes sautées aux Brocolis & Riz ou Vermicelles",
-                "price": 26,
-                "order": 5
-            },
-            {
-                "name": "Combinaison F",
-                "description": "Poulet Général Tao & Riz ou Vermicelles",
-                "price": 25,
-                "order": 6
-            },
-            {
-                "name": "Combinaison A",
-                "description": "Brochette de Crevettes & Poulet Grillé & Riz ou vermicelles et salade",
-                "price": 25,
-                "order": 1
-            }
-        ]
-    },
-    {
-        "soup": [
-            {
-                "name": "Soupe aux Légumes",
-                "price": 18,
-                "order": 1
-            },
-            {
-                "name": "Soupe aux Poulet",
-                "price": 20,
-                "order": 2
-            },
-            {
-                "name": "Soupe aux Crevettes",
-                "price": 23,
-                "order": 3
-            }
-        ]
-    }
-]
+{
+    "entrees": [
+        {
+            "name": "Rouleau Impérial (frit)",
+            "price": 3.75,
+            "order": 3
+        },
+        {
+            "name": "Rouleau Printemps Poulet (froit)",
+            "price": 4.75,
+            "order": 4
+        },
+        {
+            "name": "Rouleau Printemps Crevette",
+            "price": 6.25,
+            "order": 5
+        },
+        {
+            "name": "Soupe Légumes Vermicelles",
+            "price": 4.25,
+            "order": 1
+        },
+        {
+            "name": "Soupe Won Ton",
+            "price": 4.25,
+            "order": 2
+        }
+    ],
+    "grilling": [
+        {
+            "name": "Rouleau Impérial & Crevette Grillé",
+            "price": 21,
+            "order": 3
+        },
+        {
+            "name": "Saumon Tériyaki",
+            "price": 25,
+            "order": 4
+        },
+        {
+            "name": "Rouleau Impérial & Poulet Grillé",
+            "price": 16,
+            "order": 1
+        },
+        {
+            "name": "Rouleau Impérial & Boeuf Grillé",
+            "price": 19,
+            "order": 2
+        }
+    ],
+    "stir-fry": [
+        {
+            "name": "Rouleau Impérial & Poulet sauce aux Arachides",
+            "price": 21,
+            "order": 5
+        },
+        {
+            "name": "Rouleau Impérial & Poulet sauté aux Gingembres",
+            "price": 21,
+            "order": 6
+        },
+        {
+            "name": "Rouleau Impérial & Poulet sauté à la Citronnelle",
+            "price": 21,
+            "order": 7
+        },
+        {
+            "name": "Rouleau Impérial & Crevettes & Légumes sauce Aigre-Douce",
+            "price": 24,
+            "order": 8
+        },
+        {
+            "name": "Rouleau Impérial & Légumes sur Nouilles Croustillantes",
+            "type": ["Poulet", "Boeuf", "Poulet & Crevettes"],
+            "price": [21, 21, 24],
+            "order": 9
+        }            
+    ],
+    "combo": [
+        {
+            "name": "Combinaison B",
+            "description": "Brochette de Crevettes & Boeuf Grillé & Riz ou vermicelles et salade",
+            "price": 26,
+            "order": 2
+        },
+        {
+            "name": "Combinaison C",
+            "description": "Brochette de Crevettes & Boeuf Grillé & Poulet Grillé & Riz ou vermicelles et salade",
+            "price": 28,
+            "order": 3
+        },
+        {
+            "name": "Combinaison D",
+            "description": "Poulet & Crevettes sautées aux Poivrons & Riz ou Vermicelles",
+            "price": 25,
+            "order": 4
+        },
+        {
+            "name": "Combinaison E",
+            "description": "revettes sautées aux Brocolis & Riz ou Vermicelles",
+            "price": 26,
+            "order": 5
+        },
+        {
+            "name": "Combinaison F",
+            "description": "Poulet Général Tao & Riz ou Vermicelles",
+            "price": 25,
+            "order": 6
+        },
+        {
+            "name": "Combinaison A",
+            "description": "Brochette de Crevettes & Poulet Grillé & Riz ou vermicelles et salade",
+            "price": 25,
+            "order": 1
+        }
+    ],
+    "soup": [
+        {
+            "name": "Soupe aux Légumes",
+            "price": 18,
+            "order": 1
+        },
+        {
+            "name": "Soupe aux Poulet",
+            "price": 20,
+            "order": 2
+        },
+        {
+            "name": "Soupe aux Crevettes",
+            "price": 23,
+            "order": 3
+        }
+    ]
+}
