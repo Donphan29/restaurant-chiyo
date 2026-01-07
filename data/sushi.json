@@ -3,7 +3,7 @@
         {
             "name": "SAKE",
             "description": "Saumon Frais",
-            "price": 6.75
+            "price": 7
         },
         {
             "name": "MAGURO",
@@ -13,22 +13,22 @@
         {
             "name": "EBI",
             "description": "Crevette",
-            "price": 6
+            "price": 6.5
         },
         {
             "name": "KANIKAMA",
             "description": "Goberge",
-            "price": 6
+            "price": 6.25
         },
         {
             "name": "TAMAGO",
             "description": "Omelette",
-            "price": 5.5
+            "price": 6
         },
         {
             "name": "UNAGI",
             "description": "Anguille",
-            "price": 12
+            "price": 12.5
         },
         {
             "name": "TOBIKO",
@@ -43,274 +43,274 @@
         {
             "name": "KUNSEI SAKE",
             "description": "Saumon fumé",
-            "price": 7
+            "price": 7.25
         },
         {
             "name": "HOTATE",
             "description": "Pétoncle",
-            "price": 12
+            "price": 13
         }
     ],
     "tartare": [
         {
             "name": "SAUMON",
-            "price": 13
+            "price": 13.5
         },
         {
             "name": "THON",
-            "price": 13
+            "price": 13.5
         },
         {
             "name": "CREVETTES",
-            "price": 13
+            "price": 13.5
         },
         {
             "name": "PÉTONCLE",
-            "price": 15
+            "price": 16.5
         },
         {
             "name": "KANI",
-            "price": 13
+            "price": 13.5
         }
     ],
     "mini-maki": [
         {
             "name": "KAPPA",
             "description": "Concombre, Sésame",
-            "price": 5.5
+            "price": 6
         },
         {
             "name": "AVOCADO",
             "description": "Avocat, Sésame",
-            "price": 6
+            "price": 6.5
         },
         {
             "name": "SAKE",
             "description": "Saumon, Échalote",
-            "price": 6
+            "price": 6.5
         },
         {
             "name": "TEKKA",
             "description": "Thon, Échalote",
-            "price": 7
+            "price": 7.5
         },
         {
             "name": "EBI",
             "description": "Crevette, Échalote",
-            "price": 6
+            "price": 6.5
         },
         {
             "name": "KANIKAMA",
             "description": "Goberge",
-            "price": 6
+            "price": 6.5
         },
         {
             "name": "KUNSEI SAKE",
             "description": "Saumon fumé",
-            "price": 7
+            "price": 7.5
         },
         {
             "name": "TAMAGO",
             "description": "Omelette",
-            "price": 6
+            "price": 6.5
         }
     ],
     "maki": [
         {
             "name": "UNAGI",
             "description": "Anguille, Concombre, Sésame",
-            "price": 13
+            "price": 14
         },
         {
             "name": "SPICY SALMON",
             "description": "Saumon, Caviar, Mayo, Tempura",
-            "price": 11.5
+            "price": 12
         },
         {
             "name": "SPICY TUNA",
             "description": "Thon, Caviar, Mayo, Tempura",
-            "price": 12
+            "price": 13
         },
         {
             "name": "SPICY HOTATE",
             "description": "Pétoncle, Caviar, Mayo, Tempura",
-            "price": 14
+            "price": 14.5
         },
         {
             "name": "SPICY EBI",
             "description": "Crevette, Caviar, Mayo, Tempura",
-            "price": 11.5
+            "price": 12
         },
         {
             "name": "DYNAMITE",
             "description": "2 Crevettes Tempuras, Concombre, Caviar, Goberge, Sésame",
-            "price": 14
+            "price": 15
         },
         {
             "name": "PHILLIA",
             "description": "Mangue, Goberge, Fromage, Caviar",
-            "price": 11
+            "price": 12
         }
     ],
     "futomaki-ext": [
         {
             "name": "CALIFORNIA",
             "description": "Avocat, Concombre, Caviar, Omelette, Goberge, Sésame",
-            "price": 11.5
+            "price": 12.5
         },
         {
             "name": "FIRE ROLL",
             "description": "Crevette, Saumon Fumé, Goberge, Salade, Sauce Forte, Caviar, Concombre",
-            "price": 13
+            "price": 14
         },
         {
             "name": "SAYURI",
             "description": "Crevette Tempura, Salade, Caviar, Fromage, Concombre, Tempura à l'extérieur",
-            "price": 13
+            "price": 14
         },
         {
             "name": "GEISHA",
             "description": "Saumon, Tempura, Salade, Concombre, Caviar à l'extérieur",
-            "price": 13
+            "price": 14
         },
         {
             "name": "DRAGON",
             "description": "Crevette Tempura, Salade, Goberge, Concombre, Caviar à l'extérieur",
-            "price": 13
+            "price": 14
         },
         {
             "name": "NIRVANA",
             "description": "Crevette, Goberge, Fraise, Mangue, Salade, Concombre, Caviar",
-            "price": 13
+            "price": 14
         },
         {
             "name": "LOBSTER ROLL",
             "description": "Homard, Concombre, Mayo, Salade, Caviar à l'extérieur",
-            "price": 15
+            "price": 16
         },
         {
             "name": "CRAB CAKE",
             "description": "Goberge, Concombre, Salade, Caviar à l'extérieur",
-            "price": 14
+            "price": 15
         },
         {
             "name": "SUMMER",
             "description": "Saumon, Asperge, Caviar, Salade, Mangue, Avocat, Concombre",
-            "price": 13
+            "price": 14
         },
         {
             "name": "TORI KATSU",
             "description": "Poulet Tempura, Mayo, Salade, Concombre, Sésame",
-            "price": 11.5
+            "price": 12.5
         }
     ],
     "futomaki-int": [
         {
             "name": "NEW-BOSTON",
             "description": "Crevette, Omelette, Caviar, Concombre, Goberge, Avocat",
-            "price": 11.5
+            "price": 12.5
         },
         {
             "name": "VALLEYFIELD",
             "description": "Saumon, Saumon Fumé, Avocat, Fromage, Concombre",
-            "price": 13
+            "price": 14
         },
         {
             "name": "VEGGY",
             "description": "Avocat, Omelette, Salade, Radis, Carotte, Fromage, Concombre",
-            "price": 11
+            "price": 11.5
         },
         {
             "name": "SPICY VEGGY",
             "description": "Avocat, Omelette, Salade, Mayo, Tempura, Carotte, Concombre, Radis",
-            "price": 11
+            "price": 11.5
         },
         {
             "name": "KAMIKAZE SAKE",
             "description": "Saumon Épicé, Mayo, Tempura, Caviar, Concombre",
-            "price": 11.5
+            "price": 12.5
         },
         {
             "name": "KAMIKAZE TUNA",
             "description": "Thon Épicé, Mayo, Tempura, Caviar, Concombre",
-            "price": 13
+            "price": 14
         },
         {
             "name": "KAMIKAZE EBI",
             "description": "Crevette Épicée, Mayo, Tempura, Caviar, Concombre",
-            "price": 11.5
+            "price": 12.5
         },
         {
             "name": "KAMIKAZE KANI",
             "description": "Goberge Épicé, Mayo, Tempura, Caviar, Concombre",
-            "price": 11.5
+            "price": 12.5
         },
         {
             "name": "SAMURAI",
             "description": "Crevette Tempura, Caviar, Concombre, Goberge",
-            "price": 13
+            "price": 14
         },
         {
             "name": "B-52",
             "description": "Crevette Tempura, Avocat, Caviar, Concombre, Fromage",
-            "price": 13
+            "price": 14
         },
         {
             "name": "POULET GRILLÉ",
             "description": "Poulet Grillé, Salade, Concombre, Carotte",
-            "price": 11.5
+            "price": 12.5
         },
         {
             "name": "PHUKET",
             "description": "Pétoncle, Fraise, Tempura, Caviar, Salade, Concombre",
-            "price": 13
+            "price": 14
         },
         {
             "name": "SKY",
             "description": "Goberge, Caviar, Mangue, Salade, Concombre, Mayo",
-            "price": 13
+            "price": 14
         },
         {
             "name": "SUNSET",
             "description": "Homard, Mayo, Salade, Caviar, Concombre",
-            "price": 15
+            "price": 16
         },
         {
             "name": "SEXY ROLL",
             "description": "Saumon, Thon, Caviar, Goberge, Concombre, Radis, Tempura",
-            "price": 14
+            "price": 15
         }
     ],
     "fried": [
         {
             "name": "DRAGON EYE",
             "description": "Saumon, Rouget, Caviar, Goberge, Échalote",
-            "price": 14
+            "price": 15
         },
         {
             "name": "TEMPURA MAKI",
             "description": "Saumon, Rouget, Omelette, Goberge, Échalote",
-            "price": 14
+            "price": 15
         },
         {
             "name": "DYNASTY",
             "description": "Saumon Fumée, Saumon, Fromage, Échalote",
-            "price": 14
+            "price": 15
         },
         {
             "name": "SUNRISE",
             "description": "Crevette, Rouget, Caviar, Goberge, Omelette, Échalote",
-            "price": 14
+            "price": 15
         },
         {
             "name": "MAKISU",
             "description": "Crevette, Goberge, Caviar, Radis, Échalote",
-            "price": 14
+            "price": 15
         },
         {
             "name": "SAKURA",
             "description": "Saumon, Crevette, Goberge, Omelette, Radis, Échalote",
-            "price": 14
+            "price": 15
         }
     ],
     "specialty": [
@@ -318,7 +318,7 @@
             "name": "ORCHIDÉE",
             "description": "Mélange de Goberge, Caviar, Échalote, Mayo & Fromage à la crème garni sur des feuilles de Won Ton frits",
             "pieces": 5,
-            "price": 15
+            "price": 16
         },
         {
             "name": "SUSHI PIZZA",
@@ -330,13 +330,13 @@
             "name": "PHEONIX (MARIO)",
             "description": "Anguille, Thon, Avocat & Concombre garni d'un mélange de Goberge Épicé sur chaque mcx",
             "pieces": 5,
-            "price": 20
+            "price": 21
         },
         {
             "name": "SUNSHINE",
             "description": "Crevette, Asperge, Mangue & Concombre garni d'un mélande de Goberge & Fromage à la crème sur chaque mcx",
             "pieces": 6,
-            "price": 20
+            "price": 21
         }
     ],
     "extra": [
@@ -366,31 +366,31 @@
             "name": "COMBO X",
             "description": "1 sushi Saumon, 1 sushi Thon, 1 sushi Goberge, 1 sushi Crevette, 4 mcx Mini Kani, 4 mcx Mini Kappa & 5 mcx Kamikaze Sake",
             "pieces": 17,
-            "price": 30
+            "price": 32
         },
         {
             "name": "COMBO Y",
             "description": "1 sushi Saumon, 1 sushi Thon, 1 sushi Goberge, 1 sushi Crevette, 4 mcx Mini  Sake, 4 mcx Mini Kappa, 5 mcx California & 5 mcx Kamikaze Sake",
             "pieces": 22,
-            "price": 35
+            "price": 37
         },
         {
             "name": "COMBO Z",
             "description": "5 mcx New-Boston, 8 mcx Spicy Salmon & 7 mcx Dragon Eye",
             "pieces": 20,
-            "price": 36
+            "price": 38
         },
         {
             "name": "COMBO V",
             "description": "4 mcx Mini Kappa, 4 mcx Mini Avocado, 5 mcx Spicy Veggy & 7 mcx Veggy Frit",
             "pieces": 20,
-            "price": 30
+            "price": 32
         },
         {
             "name": "COMBO POUR DEUX",
             "description": "2x Soupe au choix, 2x Rouleau Impérial, 4 mcx Mini Kappa, 4 mcx Mini Avocado, 5 mcx California, 5 mcx Valleyfield, 8 mcx Spicy Salmon & 7 mcx Dragon Eye",
             "pieces": 33,
-            "price": 60
+            "price": 63
         }
     ]
 }

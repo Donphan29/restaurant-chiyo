@@ -10,7 +10,7 @@
         },
         {
             "name": "Rouleau Printemps au Poulet & Crevette",
-            "price": 6.25
+            "price": 6.5
         },
         {
             "name": "Crevettes Tempura",
@@ -18,29 +18,29 @@
         },
         {
             "name": "Won Ton Frit",
-            "price": 9
+            "price": 11
         }
     ],
     "soup": [
         {
             "name": "Soupe aux Légumes",
-            "price": 4.25
+            "price": 4.5
         },
         {
             "name": "Soupe Won Ton",
-            "price": 4.25
+            "price": 4.5
         },
         {
             "name": "Soupe aux Légumes & à la Citronelle",
-            "price": 4.25
+            "price": 4.5
         },
         {
             "name": "Soupe aux Légumes & à la Citronelle & Lait de Coco",
-            "price": 4.25
+            "price": 4.5
         },
         {
             "name": "Soupe Miso",
-            "price": 4.25
+            "price": 4.5
         },
         {
             "name": "Soupe aux Légumes & à la Citronelle & Poulet",
@@ -54,141 +54,141 @@
     "vegetarian": [
         {
             "name": "Légumes sautés servi sur nouilles croustillantes",
-            "price": 18
+            "price": 19
         },
         {
             "name": "Légumes sautés à la sauce au cari rouge",
-            "price": 18
+            "price": 19
         }
     ],
     "pad-thai": [
         {
             "name": "Poulet - Chicken",
-            "price": 23
-        },
-        {
-            "name": "Boeuf - Beef",
             "price": 24
         },
         {
-            "name": "Crevette - Shrimp",
+            "name": "Boeuf - Beef",
             "price": 25
+        },
+        {
+            "name": "Crevette - Shrimp",
+            "price": 26
         }
     ],
     "noodle": [
         {
             "name": "Poulet - Chicken",
-            "price": 23
-        },
-        {
-            "name": "Boeuf - Beef",
             "price": 24
         },
         {
-            "name": "Crevette - Shrimp",
+            "name": "Boeuf - Beef",
             "price": 25
+        },
+        {
+            "name": "Crevette - Shrimp",
+            "price": 26
         },
         {
             "name": "Fruit de Mer - Seafood",
-            "price": 33
+            "price": 34
         },
         {
             "name": "Poulet & Crevette - Chicken & Shrimp",
-            "price": 25
+            "price": 26
         }
     ],
     "grilling": [
         {
             "name": "Grillades de poulet & boeuf à l'asiatique",
             "english": "Asian style grilled chicken & beef",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Grillades de poulet & crevette à l'asiatique",
             "english": "Asian style grilled chicken & shrimp",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Grillades de boeuf & crevette à l'asiatique",
             "english": "Asian style grilled beef & shrimp",
-            "price": 25
+            "price": 26
         },
         {
             "name": "Trio de grillades à l'asiatique (poulet, boeuf, crevette)",
             "english": "Asian style grilled chicken, beef & shrimp",
-            "price": 27
+            "price": 28
         }
     ],
     "stir-fry": [
         {
             "name": "Poulet sauté aux légumes à la sauce aux huîtres",
             "english": "Oyster sauce chicken & vegetables",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Poulet sauté aux légumes à la sauce cari rouge",
             "english": "Red curry chicken & vegetables",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Poulet sauté aux légumes à la sauce aigre douce",
             "english": "Sweet & sour chicken & vegetables",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Poulet à la sauce aux arachides & épinards croustillants",
             "english": "Peanut butter chicken served with spinach crisps",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Poulet Général Tao",
             "english": "Chicken General Tao",
-            "price": 23
+            "price": 24
         },
         {
             "name": "Boeuf sauté aux légumes à la sauce cari rouge",
             "english": "Red curry beef & vegetables",
-            "price": 24
+            "price": 25
         },
         {
             "name": "Crevettes sautés aux légumes à la sauce aux huîtres",
             "english": "Oyster sauce shrimp & vegetables",
-            "price": 25
+            "price": 26
         },
         {
             "name": "Crevettes sautés aux légumes à la sauce cari rouge",
             "english": "Red curry shrimp & vegetables",
-            "price": 25
+            "price": 26
         },
         {
             "name": "Crevettes sautés aux légumes à la sauce aigre-douce",
             "english": "Sweet & sour shrimp & vegetables",
-            "price": 25
+            "price": 26
         },
         {
             "name": "Crevettes à la sauce aux arachides & épinards croustillants",
             "english": "Peanut butter shrimp served with spinach crisps",
-            "price": 25
+            "price": 26
         },
         {
             "name": "Fruits de mer sautés aux légumes à la sauce aux huîtres",
             "english": "Oyster sauce seafood & vegetables",
-            "price": 33
+            "price": 34
         },
         {
             "name": "Fruits de mer sautés aux légumes à la sauce cari rouge",
             "english": "Red curry seafood & vegetables",
-            "price": 33
+            "price": 34
         },
         {
             "name": "Fruits de mer sautés aux légumes à la sauce aigre douce",
             "english": "Sweet & sour seafood & vegetables",
-            "price": 33
+            "price": 34
         },
         {
             "name": "Fruits de mer à la sauce aux arachides & épinards croustillants",
             "english": "Peanut butter seafood served with spinach crisps",
-            "price": 33
+            "price": 34
         }
     ]
 }

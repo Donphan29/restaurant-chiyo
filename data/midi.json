@@ -2,11 +2,11 @@
     "entrees": [
         {
             "name": "Soupe Légumes Vermicelles",
-            "price": 4.25
+            "price": 4.50
         },
         {
             "name": "Soupe Won Ton",
-            "price": 4.25
+            "price": 4.50
         },
         {
             "name": "Rouleau Impérial (frit)",
@@ -17,100 +17,100 @@
             "price": 4.75
         },
         {
-            "name": "Rouleau Printemps Crevette",
-            "price": 6.25
+            "name": "Rouleau Printemps Poulet Crevette",
+            "price": 6.50
         }
     ],
     "grilling": [
         {
             "name": " #1 Poulet Grillé",
-            "price": 16
+            "price": 17
         },
         {
             "name": "#2 Boeuf Grillé",
-            "price": 19
+            "price": 20
         },
         {
             "name": "#3 Crevettes Grillé",
-            "price": 21
+            "price": 22
         },
         {
             "name": "#4 Saumon Tériyaki",
-            "price": 28
+            "price": 29
         }
     ],
     "stir-fry": [
         {
             "name": "#5 Poulet sauce aux Arachides",
-            "price": 21,
+            "price": 22,
             "order": 5
         },
         {
             "name": "#6 Poulet sauté aux Gingembres",
-            "price": 21,
+            "price": 22,
             "order": 6
         },
         {
             "name": "#7 Poulet sauté à la Citronnelle",
-            "price": 21,
+            "price": 22,
             "order": 7
         },
         {
             "name": "#8 Crevettes sauce Aigre-Douce",
-            "price": 24,
+            "price": 25,
             "order": 8
         },
         {
             "name": "#9 Nouilles Croustillantes",
             "type": ["Poulet", "Boeuf", "Poulet & Crevettes"],
-            "price": [21, 21, 24],
+            "price": [22, 22, 25],
             "order": 9
         }            
     ],
     "soup": [
         {
             "name": "#12 Soupe aux Légumes",
-            "price": 18
+            "price": 19
         },
         {
             "name": "#13 Soupe au Poulet",
-            "price": 20
+            "price": 22
         },
         {
             "name": "#14 Soupe aux Crevettes",
-            "price": 23
+            "price": 25
         }
     ],
     "combo": [
         {
             "name": "Combinaison A",
             "description": "Brochette de Crevettes & Poulet Grillé",
-            "price": 25
+            "price": 27
         },
         {
             "name": "Combinaison B",
             "description": "Brochette de Crevettes & Boeuf Grillé",
-            "price": 26
+            "price": 28
         },
         {
             "name": "Combinaison C",
             "description": "Brochette de Crevettes, Boeuf Grillé & Poulet Grillé",
-            "price": 28
+            "price": 30
         },
         {
             "name": "Combinaison D",
             "description": "Poulet & Crevettes sautées aux Poivrons",
-            "price": 25
+            "price": 27
         },
         {
             "name": "Combinaison E",
             "description": "Crevettes sautées aux Broccolis",
-            "price": 26
+            "price": 28
         },
         {
             "name": "Combinaison F",
             "description": "Poulet Général Tao",
-            "price": 25
+            "price": 27
         }
     ]
 }

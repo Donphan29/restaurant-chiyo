@@ -17,7 +17,7 @@ export default function Menu() {
             <div className='w-full md:flex md:flex-row md:justify-between md:items-center pl-7 md:pl-14 md:pr-14'>
                 <h1 className='font-mont_reg text-7xl'>MENU</h1>
                 <ThemeProvider theme={THEME}>
-                    <Link href='/assets/pdf/menu-2023.pdf' color='secondary' underline='none' className='hover:underline underline-offset-4'>
+                    <Link href='/assets/pdf/menu-2026.pdf' color='secondary' underline='none' className='hover:underline underline-offset-4'>
                         <h2 className='pt-4 font-open'>voir menu complet <ArrowRightAltIcon></ArrowRightAltIcon></h2>
                     </Link>
                 </ThemeProvider>

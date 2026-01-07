@@ -3,63 +3,63 @@
         {
             "name": "1. Poulet, crevettes & légumes sautés servi sur nouilles croustillantes",
             "english": "Chicken, shrimps & vegetables stir fry served on crispy noodles",
-            "price": 30
+            "price": 33
         },
         {
             "name": "2. Boeuf & légumes sautés servi sur nouilles croustillantes",
             "english": "Beef & vegetables stir fry served on crispy noodles",
-            "price": 30
+            "price": 32
         },
         {
             "name": "3. Poulet à la sauce aux arachides & épinards croustillants",
             "english": "Peanut Butter chicken served with spinach crisps",
-            "price": 30
+            "price": 32
         },
         {
             "name": "4. Crevettes sautées aux légumes à la sauce au aigre douce",
             "english": "Sweet and sour shrimp & vegetable",
-            "price": 32
+            "price": 34
         },
         {
             "name": "5. Combinaison de fruits de mer à la sauce au cari rouge",
             "english": "Red curry seafood combination",
-            "price": 38
+            "price": 41
         },
         {
             "name": "6. Grillades de poulet et de boeuf à l'asiatique",
             "english": "Asian style grilled chicken & beef served with salad",
-            "price": 30
+            "price": 32
         },
         {
             "name": "7. Grillades de poulet et crevettes à l'asiatique",
             "english": "Asian style grilled chicken and shrimp served with salad",
-            "price": 30
+            "price": 32
         },
         {
             "name": "8. Grillades de boeuf et crevettes à l'asiatique",
             "english": "Asian style grilled beef and shrimps served with salad",
-            "price": 31
+            "price": 33
         },
         {
             "name": "9. Trio de grillades a l'asiatique (poulet, boeuf, crevette)",
             "english": "Asian style grilled chicken, beef & shrimp served with salad",
-            "price": 34
+            "price": 36
         },
         {
             "name": "10. Teriyaki sur un lit de légumes sautés",
             "english": "Teriyaki on stir fried vegetable bed",
             "type": ["Poulet", "Boeuf", "Saumon", "Crevette"],
-            "price": 37
+            "price": 40
         },
         {
             "name": "11. Sizzling de fruit de mer et légumes sautés",
             "english": "Seafood sizzling",
-            "price": 39
+            "price": 43
         },
         {
             "name": "12. Général Tao",
             "english": "Chicken General Tao",
-            "price": 30
+            "price": 32
         }
     ]
 }
