@@ -18,6 +18,9 @@ export default function Info() {
                         <Link href='https://goo.gl/maps/YoTSRcaNm8XCRdy78' underline='none' color='primary' className='text-lg md:text-2xl hover:underline underline-offset-4'><PlaceIcon></PlaceIcon>209, Chemin Larocque, J6T 4B6</Link>
                         <br />
                         <Link href='tel:4503732497' underline='none' color='primary' className='text-lg md:text-2xl hover:underline underline-offset-4'><PhoneIcon></PhoneIcon>(450) 373-2497</Link>
+                        <br />
+                        <br />
+                        <h2>**Nous sommes désormais fermé le 21 Juin, 2026 au 21 Juillet, 2026**</h2>
                     </ThemeProvider>
                 </div>
                 <Schedule></Schedule>
